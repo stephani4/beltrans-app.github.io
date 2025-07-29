@@ -5,49 +5,10 @@
     <link rel="icon" type="image/svg+xml" href="/beltrans-app.github.io/vite.svg"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Белтранс</title>
-  <script type="module" crossorigin src="/beltrans-app.github.io/assets/index-DAb5-Dhm.js"></script>
-  <link rel="stylesheet" crossorigin href="/beltrans-app.github.io/assets/index-Dd3tmefQ.css">
+  <script type="module" crossorigin src="/beltrans-app.github.io/assets/index-ssIUi7mP.js"></script>
+  <link rel="stylesheet" crossorigin href="/beltrans-app.github.io/assets/index-JrSYBTI1.css">
 </head>
 <body>
-
-<!-- Модальное окон -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content rounded-0 bg-primary">
-            <div class="modal-body">
-                <div class="d-flex justify-content-between mb-2">
-                    <h5 class="modal-title text-white fw-bold" id="exampleModalLabel">
-                        Оставьте заявку<br> на обратный звонок
-                    </h5>
-
-                    <div>
-                        <button type="button" class="btn text-white" data-bs-dismiss="modal" aria-label="Close">
-                            <i class="bi bi-x-lg"></i>
-                        </button>
-                    </div>
-                </div>
-
-                <form class="d-flex flex-column gap-2">
-                    <label class="w-100">
-                        <input name="name" type="text" class="form-control" placeholder="Имя">
-                    </label>
-
-                    <label class="w-100">
-                        <input name="phone" type="tel" class="form-control" placeholder="Контактный телефон">
-                    </label>
-
-                    <label class="w-100">
-                        <textarea name="description" class="form-control" placeholder="Заинтересовавшая вас тема"></textarea>
-                    </label>
-
-                    <div class="actions d-flex">
-                        <button type="button" class="btn btn-primary">Отправить</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
 
 <!-- Вертикальное меню -->
 <div class="main-menu position-fixed w-100 h-100" style="z-index: 99999; display: none">
@@ -140,15 +101,16 @@
     <i class="bi bi-list"></i>
 </a>
 
+<!-- Основной блок -->
 <section id="main">
     <div
-     style="
+            style="
         background-image: url('/beltrans-app.github.io/assets/background-main-section-WQmD7dvy.png');
         background-position-x: 30%;
         background-size: cover;
         min-height: 100vh;
      "
-     class="position-relative d-none d-lg-block"
+            class="position-relative d-none d-lg-block"
     >
         <div class="position-absolute w-100 h-100 z-3">
             <div class="container-fluid h-100">
@@ -162,12 +124,12 @@
                                             <span style="font-size: 21rem" class="section-title text-white">15</span>
                                             <div class="d-flex flex-column position-relative">
                                                 <span
-                                                    style="font-size: 16rem; line-height: 28rem; text-shadow: 3px 3px 5px #3e3e3e;"
-                                                    class="section-title text-white"
+                                                        style="font-size: 16rem; line-height: 28rem; text-shadow: 3px 3px 5px #3e3e3e;"
+                                                        class="section-title text-white"
                                                 >00</span>
                                                 <p
-                                                    class="position-absolute section-title text-white fs-6"
-                                                    style="top: 20rem;"
+                                                        class="position-absolute section-title text-white fs-6"
+                                                        style="top: 20rem;"
                                                 >
                                                     Единиц техники обслуживаем ежегодно
                                                 </p>
@@ -199,13 +161,13 @@
                                                     /
                                                 </span>
                                                     <span
-                                                        style="
+                                                            style="
                                                         font-size: 21rem;
                                                         color: transparent;
                                                         background-image: linear-gradient(#ffffff, #3cadff);
                                                         background-clip: text;
                                                         "
-                                                        class="section-title"
+                                                            class="section-title"
                                                     >
                                                         &nbsp;7
                                                     </span>
@@ -224,11 +186,11 @@
                                             <div class="d-flex flex-column position-relative">
                                                 <div class="position-relative">
                                                     <span style="font-size: 7rem; line-height: 15rem" class="section-title text-white">00</span>
-                                                    <img style="right: 0.7rem; top: 5.2rem; width: 1.4rem;" class="position-absolute bottom-0" src="/beltrans-app.github.io/assets/man-BwlpfIXH.png" alt="" />
+                                                    <img style="right: 0.7rem; top: 5.2rem; width: 1.4rem;" class="position-absolute bottom-0" src="/src/images/man-BwlpfIXH.png" alt="" />
                                                 </div>
                                                 <p
-                                                    class="position-absolute section-title text-white fs-6"
-                                                    style="top: 10rem;"
+                                                        class="position-absolute section-title text-white fs-6"
+                                                        style="top: 10rem;"
                                                 >
                                                     Квалифицированных специалистов
                                                 </p>
@@ -288,7 +250,7 @@
 <section id="mobile-main">
     <div
         style="
-        background-image: url('/beltrans-app.github.io/assets/background-main-section-WQmD7dvy.png');
+        background-image: url('./src/images/backgrounds/background-main-section.png');
         background-position-x: 27 %;
         background-size: cover;
         min-height: 100vh;
@@ -682,6 +644,136 @@
         </div>
     </div>
 </section>
+
+<!-- Модальное окон -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content rounded-0 bg-primary">
+            <div class="modal-body">
+                <div class="d-flex justify-content-between mb-2">
+                    <h5 class="modal-title text-white fw-bold" id="exampleModalLabel">
+                        Оставьте заявку<br> на обратный звонок
+                    </h5>
+
+                    <div>
+                        <button type="button" class="btn text-white" data-bs-dismiss="modal" aria-label="Close">
+                            <i class="bi bi-x-lg"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <form class="d-flex flex-column gap-2">
+                    <label class="w-100">
+                        <input name="name" type="text" class="form-control" placeholder="Имя">
+                    </label>
+
+                    <label class="w-100">
+                        <input name="phone" type="tel" class="form-control" placeholder="Контактный телефон">
+                    </label>
+
+                    <label class="w-100">
+                        <textarea name="description" class="form-control" placeholder="Заинтересовавшая вас тема"></textarea>
+                    </label>
+
+                    <div class="actions d-flex">
+                        <button type="button" class="btn btn-primary">Отправить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Вертикальное меню -->
+<div class="main-menu position-fixed w-100 h-100" style="z-index: 99999; display: none">
+    <div class="row h-100">
+        <div class="col-12 offset-lg-6 col-lg-3 bg-white h-100 py-4" style="padding-left: 3rem">
+            <div class="row h-100">
+                <div class="col d-flex flex-column gap-5 px-3 position-relative">
+                    <div class="d-flex justify-content-between">
+                        <div class="d-flex gap-4 fs-1 text-primary">
+                            <i class="bi bi-telegram"></i>
+                            <i class="bi bi-whatsapp"></i>
+                        </div>
+
+                        <div class="fs-3 text-primary">
+                            <button class="btn border-0 btn-toggle-menu fs-3">
+                                <i class="bi bi-x-lg"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-column gap-4">
+                        <a class="text-black fs-3" href="javascript:void(0)">
+                            Сервис и ремонт техники<br>
+                            угольных предприятий<br>
+                            любой сложности
+                        </a>
+
+                        <a class="text-black fs-3" href="javascript:void(0)">
+                            Производственный<br>
+                            сервис
+                        </a>
+
+                        <a class="text-black fs-3" href="javascript:void(0)">
+                            Выездной сервис
+                        </a>
+
+                        <a class="text-black fs-3" href="javascript:void(0)">
+                            Контакты
+                        </a>
+                    </div>
+
+                    <div class="position-absolute bottom-0 z-3 py-5 d-flex flex-column gap-3">
+                        <a href="javascript:void(0)" class="fs-3 btn-toggle-menu" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Оставьте заявку<br>
+                            на обратный звонок
+                        </a>
+
+                        <div class="d-flex">
+                            <p class="fs-2 text-primary">
+                                <i class="bi bi-geo-alt-fill"></i>
+                            </p>
+
+                            <p class="fs-3 fs-4">
+                                Кемеровская область - Кузбасс,<br>
+                                г. Белово, ул. Громовой, д. 17
+                            </p>
+                        </div>
+
+                        <div class="d-flex">
+                            <p class="fs-2 text-pr text-primary">
+                                <i class="bi bi-phone"></i>
+                            </p>
+
+                            <div class="fs-3 d-flex flex-column">
+                                <a class="text-decoration-none text-black" href="tel:+73845260607">
+                                    +7(384-52)&nbsp;6-06-07
+                                </a>
+
+                                <a class="text-decoration-none text-black" href="tel:+7913-410-08-45">
+                                    +7&nbsp;913-410-08-45
+                                </a>
+
+                                <a class="fs-4" href="mailto:trade@beltrans.pro">
+                                    trade@beltrans.pro
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<a
+    style="right: 26.5vw; top: 2rem; z-index: 1000;"
+    class="position-fixed fs-3 btn-toggle-menu text-white"
+    href="javascript:void(0)"
+>
+    <i class="bi bi-list"></i>
+</a>
 
 <!-- Контактная информация -->
 <section id="contact" class="bg-primary py-5" style="min-height: 100vh">
