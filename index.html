@@ -10,29 +10,51 @@
 </head>
 <body>
 
-<header class="fixed-top w-100">
-    <div class="row">
-        <div class="col-12 col-lg-6 offset-lg-3">
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#"></a>
+<!-- Модальное окон -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content rounded-0 bg-primary">
+            <div class="modal-body">
+                <div class="d-flex justify-content-between mb-2">
+                    <h5 class="modal-title text-white fw-bold" id="exampleModalLabel">
+                        Оставьте заявку<br> на обратный звонок
+                    </h5>
 
-                    <button class="btn-toggle-menu btn border-0 fw-bold text-primary fs-2">
-                        <i class="bi bi-list"></i>
-                    </button>
+                    <div>
+                        <button type="button" class="btn text-white" data-bs-dismiss="modal" aria-label="Close">
+                            <i class="bi bi-x-lg"></i>
+                        </button>
+                    </div>
                 </div>
-            </nav>
+
+                <form class="d-flex flex-column gap-2">
+                    <label class="w-100">
+                        <input name="name" type="text" class="form-control" placeholder="Имя">
+                    </label>
+
+                    <label class="w-100">
+                        <input name="phone" type="tel" class="form-control" placeholder="Контактный телефон">
+                    </label>
+
+                    <label class="w-100">
+                        <textarea name="description" class="form-control" placeholder="Заинтересовавшая вас тема"></textarea>
+                    </label>
+
+                    <div class="actions d-flex">
+                        <button type="button" class="btn btn-primary">Отправить</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
-</header>
+</div>
 
 <!-- Вертикальное меню -->
 <div class="main-menu position-fixed w-100 h-100" style="z-index: 99999; display: none">
     <div class="row h-100">
-        <div class="col-12 offset-lg-6 col-lg-3 bg-white h-100 py-4">
-            <div class="row">
-                <div class="col-1"></div>
-                <div class="col d-flex flex-column gap-5 px-3">
+        <div class="col-12 offset-lg-6 col-lg-3 bg-white h-100 py-4" style="padding-left: 3rem">
+            <div class="row h-100">
+                <div class="col d-flex flex-column gap-5 px-3 position-relative">
                     <div class="d-flex justify-content-between">
                         <div class="d-flex gap-4 fs-1 text-primary">
                             <i class="bi bi-telegram"></i>
@@ -68,7 +90,7 @@
                     </div>
 
                     <div class="position-absolute bottom-0 z-3 py-5 d-flex flex-column gap-3">
-                        <a href="javascript:void(0)" class="fs-3">
+                        <a href="javascript:void(0)" class="fs-3 btn-toggle-menu" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             Оставьте заявку<br>
                             на обратный звонок
                         </a>
@@ -78,7 +100,7 @@
                                 <i class="bi bi-geo-alt-fill"></i>
                             </p>
 
-                            <p class="fs-3">
+                            <p class="fs-3 fs-4">
                                 Кемеровская область - Кузбасс,<br>
                                 г. Белово, ул. Громовой, д. 17
                             </p>
@@ -110,6 +132,14 @@
     </div>
 </div>
 
+<a
+    style="right: 26.5vw; top: 2rem; z-index: 1000;"
+    class="position-fixed fs-3 btn-toggle-menu text-white"
+    href="javascript:void(0)"
+>
+    <i class="bi bi-list"></i>
+</a>
+
 <section id="main">
     <div
      style="background-image: url('/beltrans-app.github.io/assets/background-main-section-WQmD7dvy.png'); background-size: cover; min-height: 100vh;"
@@ -126,7 +156,10 @@
                                         <div class="d-flex justify-content-center justify-content-lg-end w-100">
                                             <span style="font-size: 21rem" class="section-title text-white">15</span>
                                             <div class="d-flex flex-column position-relative">
-                                                <span style="font-size: 16rem; line-height: 28rem" class="section-title text-white">00</span>
+                                                <span
+                                                    style="font-size: 16rem; line-height: 28rem; text-shadow: 3px 3px 5px #3e3e3e;"
+                                                    class="section-title text-white"
+                                                >00</span>
                                                 <p
                                                     class="position-absolute section-title text-white fs-6"
                                                     style="top: 20rem;"
@@ -137,8 +170,8 @@
                                         </div>
                                     </div>
                                     <div class="col-12 col-lg-6">
-                                        <div class="d-flex flex-column justify-content-center justify-content-lg-start">
-                                            <div class="d-flex w-100 position-relative">
+                                        <div class="d-flex flex-column">
+                                            <div class="d-flex justify-content-center justify-content-lg-start w-100 position-relative">
                                                 <div class="d-flex position-relative">
                                                     <div class="position-relative">
                                                         <span
@@ -210,7 +243,7 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid position-relative">
+        <div class="container-fluid position-absolute z-3">
             <div class="row">
                 <div class="col-12 col-lg-6 offset-lg-3 py-3">
                     <nav class="navbar navbar-expand-lg">
@@ -226,6 +259,17 @@
                                     </span>
                                     </li>
                                 </ul>
+                            </div>
+
+                            <div class="ml-auto">
+                                <div class="d-none d-lg-flex gap-3 fs-3" style="margin-right: 3rem">
+                                    <a class="text-white" href="javascript:void(0)">
+                                        <i class="bi bi-telegram"></i>
+                                    </a>
+                                    <a class="text-white" href="javascript:void(0)">
+                                        <i class="bi bi-whatsapp"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </nav>
@@ -741,45 +785,43 @@
     </div>
 </section>
 
-<section id="service" class="vh-100">
-    <div
-        class="h-100"
-        style="background-image: url('/beltrans-app.github.io/assets/backgroup-section-2-CBmVn9c3.png'); background-size: cover"
-    >
-        <div class="container-fluid h-100">
-            <div class="row h-100">
-                <div class="col-12 col-lg-6 offset-3">
-                    <div class="row h-100">
-                        <div class="col-12 offset-6 col-lg-6 d-flex align-items-center">
-                            <div class="d-flex flex-column">
+<section
+    id="service"
+    style="background-image: url('/beltrans-app.github.io/assets/backgroup-section-2-CBmVn9c3.png'); background-size: cover; min-height: 100vh"
+>
+    <div class="container-fluid h-100">
+        <div class="row h-100">
+            <div class="col-12 col-lg-6 offset-3">
+                <div class="row h-100">
+                    <div class="col-12 offset-6 col-lg-6 d-flex align-items-center">
+                        <div class="d-flex flex-column">
                                 <span class="d-block h1 text-primary">
                                     Выездной сервис
                                 </span>
-                                <ul class="text-primary fs-3">
-                                    <li>
-                                        Мобильные сервисные бригады плановое ТО, диагностика,
-                                        текущий ремонт
-                                    </li>
+                            <ul class="text-primary fs-3">
+                                <li>
+                                    Мобильные сервисные бригады плановое ТО, диагностика,
+                                    текущий ремонт
+                                </li>
 
-                                    <li>
-                                        Установка систем пожаротушения
-                                        и централизованных
-                                        систем смазки
-                                    </li>
+                                <li>
+                                    Установка систем пожаротушения
+                                    и централизованных
+                                    систем смазки
+                                </li>
 
-                                    <li>
-                                        Расточно-наплавочные работы
-                                    </li>
+                                <li>
+                                    Расточно-наплавочные работы
+                                </li>
 
-                                    <li>
-                                        Лаборатория неразрушающего контроля
-                                    </li>
+                                <li>
+                                    Лаборатория неразрушающего контроля
+                                </li>
 
-                                    <li>
-                                        Выездные сварочные бригады
-                                    </li>
-                                </ul>
-                            </div>
+                                <li>
+                                    Выездные сварочные бригады
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
