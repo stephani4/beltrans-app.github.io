@@ -1,7 +1,0 @@
-@font-face {
-    font-family: 'BebasNeue'; /* Choose a descriptive name */
-    src: url("./fonts/BebasNeue.ttf") format('truetype'); /* Adjust the path as needed */
-    font-weight: normal; /* Optional: define weight */
-    font-style: normal; /* Optional: define style */
-    font-display: swap; /* Optional: control font loading behavior */
-}

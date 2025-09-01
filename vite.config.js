@@ -1,5 +1,10 @@
- import {defineConfig} from "vite";
+import {defineConfig} from "vite";
 
-export default defineConfig({
-    base: 'beltrans-app.github.io',
-})
+export default ({mode}) => {
+    return defineConfig({
+        ...(mode === 'production' ? {} : {base: 'beltrans-app.github.io'}),
+        build: {
+            outDir: '../beltrans.local/www'
+        }
+    })
+}
