@@ -3,101 +3,128 @@
 <head>
     <meta charset="UTF-8"/>
     <link rel="icon" type="image/svg+xml" href="/vite.svg"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no"/>
     <title>Белтранс</title>
 </head>
 <body>
 
-<header class="fixed-top w-100">
-    <div class="row">
-        <div class="col-12 col-lg-6 offset-lg-3">
-            <nav class="navbar navbar-expand-lg ">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#"></a>
+<!-- Вертикальное меню -->
+<div class="main-menu position-fixed w-100 h-100" style="z-index: 99999; display: none">
+    <div class="position-absolute z-1 w-100 h-100" style="background: rgba(0,0,0,0.61)"></div>
+    <div class="position-relative z-2 container d-flex justify-content-end h-100">
+        <div class="main-menu-body bg-white py-4 ps-2 h-100">
+            <div class="row h-100 overflow-auto">
+                <div class="col d-flex flex-column gap-5 px-3 position-relative">
+                    <div class="row">
+                        <div class="col-1"></div>
+                        <div class="col">
+                            <div class="d-flex justify-content-between mb-5">
+                                <div class="d-flex gap-4 align-items-center fs-1 text-primary">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                         width="40px" height="40px" viewBox="0 0 24 24" version="1.1">
+                                        <title>telegram_fill</title>
+                                        <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <g id="Brand" transform="translate(-672.000000, -48.000000)">
+                                                <g id="telegram_fill" transform="translate(672.000000, 48.000000)">
+                                                    <path d="M24,0 L24,24 L0,24 L0,0 L24,0 Z M12.5934901,23.257841 L12.5819402,23.2595131 L12.5108777,23.2950439 L12.4918791,23.2987469 L12.4918791,23.2987469 L12.4767152,23.2950439 L12.4056548,23.2595131 C12.3958229,23.2563662 12.3870493,23.2590235 12.3821421,23.2649074 L12.3780323,23.275831 L12.360941,23.7031097 L12.3658947,23.7234994 L12.3769048,23.7357139 L12.4804777,23.8096931 L12.4953491,23.8136134 L12.4953491,23.8136134 L12.5071152,23.8096931 L12.6106902,23.7357139 L12.6232938,23.7196733 L12.6232938,23.7196733 L12.6266527,23.7031097 L12.609561,23.275831 C12.6075724,23.2657013 12.6010112,23.2592993 12.5934901,23.257841 L12.5934901,23.257841 Z M12.8583906,23.1452862 L12.8445485,23.1473072 L12.6598443,23.2396597 L12.6498822,23.2499052 L12.6498822,23.2499052 L12.6471943,23.2611114 L12.6650943,23.6906389 L12.6699349,23.7034178 L12.6699349,23.7034178 L12.678386,23.7104931 L12.8793402,23.8032389 C12.8914285,23.8068999 12.9022333,23.8029875 12.9078286,23.7952264 L12.9118235,23.7811639 L12.8776777,23.1665331 C12.8752882,23.1545897 12.8674102,23.1470016 12.8583906,23.1452862 L12.8583906,23.1452862 Z M12.1430473,23.1473072 C12.1332178,23.1423925 12.1221763,23.1452606 12.1156365,23.1525954 L12.1099173,23.1665331 L12.0757714,23.7811639 C12.0751323,23.7926639 12.0828099,23.8018602 12.0926481,23.8045676 L12.108256,23.8032389 L12.3092106,23.7104931 L12.3186497,23.7024347 L12.3186497,23.7024347 L12.3225043,23.6906389 L12.340401,23.2611114 L12.337245,23.2485176 L12.337245,23.2485176 L12.3277531,23.2396597 L12.1430473,23.1473072 Z"
+                                                          id="MingCute" fill-rule="nonzero"></path>
+                                                    <path d="M19.7773,4.42984 C20.8652,3.97177 22.0315,4.8917 21.8394,6.05639 L19.5705,19.8131 C19.3517,21.1395 17.8949,21.9006 16.678,21.2396 C15.6597,20.6865 14.1489,19.8352 12.7873,18.9455 C12.1074,18.5012 10.0255,17.0766 10.2814,16.0625 C10.5002,15.1954 14.0001,11.9375 16.0001,10 C16.7857,9.23893 16.4279,8.79926 15.5001,9.5 C13.1985,11.2383 9.50332,13.8812 8.28136,14.625 C7.20323,15.2812 6.64031,15.3932 5.96886,15.2812 C4.74273,15.0769 3.60596,14.7605 2.67788,14.3758 C1.42351,13.8558 1.48461,12.132 2.67703,11.63 L19.7773,4.42984 Z"
+                                                          id="路径" fill="#01499a"></path>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                    <i class="bi bi-whatsapp"></i>
+                                </div>
 
-                    <button class="btn-toggle-menu btn border-0 fw-bold text-primary fs-2">
-                        <i class="bi bi-list"></i>
-                    </button>
-                </div>
-            </nav>
-        </div>
-    </div>
-</header>
+                                <div class="fs-3 text-primary">
+                                    <button class="btn border-0 btn-toggle-menu fs-3">
+                                        <i class="bi bi-x-lg"></i>
+                                    </button>
+                                </div>
+                            </div>
 
-<div class="main-menu position-fixed w-100 h-100" style="z-index: 99999;">
-    <div class="row h-100">
-        <div class="col-12 offset-lg-6 col-lg-3 bg-white h-100 py-4">
-            <div class="row">
-                <div class="col-1"></div>
-                <div class="col d-flex flex-column gap-5 px-3">
-                    <div class="d-flex justify-content-between">
-                        <div class="d-flex gap-4 fs-1 text-primary">
-                            <i class="bi bi-telegram"></i>
-                            <i class="bi bi-whatsapp"></i>
-                        </div>
+                            <div class="d-flex flex-column gap-4 fs-4 lh-1">
+                                <a onclick="scrollToElement('#carousel'); toggleMenuEvent();" class="text-black"
+                                   href="javascript:void(0)">
+                                    Сервис и ремонт техники<br>
+                                    угольных предприятий<br>
+                                    любой сложности
+                                </a>
 
-                        <div class="fs-3 text-primary">
-                            <button class="btn border-0 btn-toggle-menu fs-3">
-                                <i class="bi bi-x-lg"></i>
-                            </button>
+                                <a onclick="scrollToElement('#services'); toggleMenuEvent();" class="text-black"
+                                   href="javascript:void(0)">
+                                    Производственный<br>
+                                    сервис
+                                </a>
+
+                                <a onclick="scrollToElement('#service'); toggleMenuEvent();" class="text-black"
+                                   href="javascript:void(0)">
+                                    Выездной сервис
+                                </a>
+
+                                <a onclick="scrollToElement('#goods'); toggleMenuEvent();" class="text-black"
+                                   href="javascript:void(0)">
+                                    Товары в наличии
+                                </a>
+
+                                <a onclick="scrollToElement('#contact'); toggleMenuEvent();" class="text-black"
+                                   href="javascript:void(0)">
+                                    Контакты
+                                </a>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="d-flex flex-column gap-4">
-                        <a class="text-black fs-3" href="javascript:void(0)">
-                            Сервис и ремонт техники<br>
-                            угольных предприятий<br>
-                            любой сложности
-                        </a>
-
-                        <a class="text-black fs-3" href="javascript:void(0)">
-                            Производственный<br>
-                            сервис
-                        </a>
-
-                        <a class="text-black fs-3" href="javascript:void(0)">
-                            Выездной сервис
-                        </a>
-
-                        <a class="text-black fs-3" href="javascript:void(0)">
-                            Контакты
-                        </a>
-                    </div>
-
-                    <div class="position-absolute bottom-0 z-3 py-5 d-flex flex-column gap-3">
-                        <a href="javascript:void(0)" class="fs-3">
-                            Оставьте заявку<br>
-                            на обратный звонок
-                        </a>
-
-                        <div class="d-flex">
-                            <p class="fs-2 text-primary">
-                                <i class="bi bi-geo-alt-fill"></i>
-                            </p>
-
-                            <p class="fs-3">
-                                Кемеровская область - Кузбасс,<br>
-                                г. Белово, ул. Громовой, д. 17
-                            </p>
+                    <div class="mt-auto d-flex flex-column">
+                        <div class="row mb-4">
+                            <div class="col-1"></div>
+                            <div class="col">
+                                <a href="javascript:void(0)" class="mb-4 btn-toggle-menu fs-4 text-primary lh-1"
+                                   data-bs-toggle="modal"
+                                   data-bs-target="#exampleModal">
+                                    Оставьте заявку<br>
+                                    на обратный звонок
+                                </a>
+                            </div>
                         </div>
 
-                        <div class="d-flex">
-                            <p class="fs-2 text-pr text-primary">
-                                <i class="bi bi-phone"></i>
-                            </p>
+                        <div class="row">
+                            <div class="col-1 pe-0 text-end">
+                                <p class="fs-5 text-danger">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                </p>
+                            </div>
+                            <div class="col">
+                                <p class="fs-5 lh-1">
+                                    Кемеровская область - Кузбасс,<br>
+                                    г. Белово, ул. Громовой, д. 17
+                                </p>
+                            </div>
+                        </div>
 
-                            <div class="fs-3 d-flex flex-column">
-                                <a class="text-decoration-none text-black" href="tel:+73845260607">
-                                    +7(384-52)&nbsp;6-06-07
-                                </a>
+                        <div class="row">
+                            <div class="col-1 pe-0 text-end">
+                                <p class="fs-5 text-danger">
+                                    <i class="bi bi-phone"></i>
+                                </p>
+                            </div>
+                            <div class="col">
+                                <div class="d-flex flex-column fs-5 gap-2">
+                                    <div class="d-flex flex-column">
+                                        <a class="text-decoration-none text-black" href="tel:+73845260607">
+                                            +7(384-52)&nbsp;6-06-07
+                                        </a>
 
-                                <a class="text-decoration-none text-black" href="tel:+7913-410-08-45">
-                                    +7&nbsp;913-410-08-45
-                                </a>
+                                        <a class="text-decoration-none text-black" href="tel:+7913-410-08-45">
+                                            +7&nbsp;913-410-08-45
+                                        </a>
+                                    </div>
 
-                                <a class="fs-4" href="mailto:trade@beltrans.pro">
-                                    trade@beltrans.pro
-                                </a>
+                                    <a class="fs-5 text-primary" href="mailto:trade@beltrans.pro">
+                                        trade@beltrans.pro
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -107,187 +134,269 @@
     </div>
 </div>
 
+<!-- Кнопка открытия меню -->
+<div class="d-none position-fixed top-0 z-3 w-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-8 offset-lg-2 d-flex justify-content-end py-3">
+                <a
+                        class="btn-menu-list btn-toggle-menu text-white fs-3"
+                        href="javascript:void(0)"
+                >
+                    <i class="bi bi-list"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
 
-<section id="carousel">
-    <button
-        style="right: 30px; bottom: 50px; z-index: 999999"
-        data-section-to="service"
-        class="btn-up-down position-absolute btn btn-outline-light rounded-circle"
-    >
-        <i class="bi bi-arrow-down-circle"></i>
-    </button>
+<!-- Плавающий бургер -->
+<div class="d-none btn-menu-list-light position-fixed w-100 z-2">
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-12 fs-3 text-end">
+                <a class="text-white btn-menu-list btn-toggle-menu" href="javascript:void(0)">
+                    <i class="bi bi-list"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
 
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+<!-- Основной блок -->
+<header id="main">
+    <div class="position-relative d-none d-md-flex flex-column bg-primary min-vh-100">
+        <div class="container position-relative" style="z-index: 999">
+            <div class="row">
+                <div class="col-lg-12">
+                    <nav class="navbar navbar-expand-lg">
+                        <a class="navbar-brand" href="#">
+                            <img style="width: 18rem;" src="/src/images/logotype.png" alt="Logo">
+                        </a>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <p class="text-white mb-0" style="line-height: 1rem; font-size:1.2rem;">
+                                        Сервис и ремонт<br>горнотранспортного оборудования
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="ml-auto">
+                            <div class="d-none d-md-flex gap-3 fs-3 align-items-center">
+                                <a class="text-white lh-0" href="javascript:void(0)">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                         width="30px" height="30px" viewBox="0 0 24 24" version="1.1">
+                                        <title>telegram_fill</title>
+                                        <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <g id="Brand" transform="translate(-672.000000, -48.000000)">
+                                                <g id="telegram_fill" transform="translate(672.000000, 48.000000)">
+                                                    <path d="M24,0 L24,24 L0,24 L0,0 L24,0 Z M12.5934901,23.257841 L12.5819402,23.2595131 L12.5108777,23.2950439 L12.4918791,23.2987469 L12.4918791,23.2987469 L12.4767152,23.2950439 L12.4056548,23.2595131 C12.3958229,23.2563662 12.3870493,23.2590235 12.3821421,23.2649074 L12.3780323,23.275831 L12.360941,23.7031097 L12.3658947,23.7234994 L12.3769048,23.7357139 L12.4804777,23.8096931 L12.4953491,23.8136134 L12.4953491,23.8136134 L12.5071152,23.8096931 L12.6106902,23.7357139 L12.6232938,23.7196733 L12.6232938,23.7196733 L12.6266527,23.7031097 L12.609561,23.275831 C12.6075724,23.2657013 12.6010112,23.2592993 12.5934901,23.257841 L12.5934901,23.257841 Z M12.8583906,23.1452862 L12.8445485,23.1473072 L12.6598443,23.2396597 L12.6498822,23.2499052 L12.6498822,23.2499052 L12.6471943,23.2611114 L12.6650943,23.6906389 L12.6699349,23.7034178 L12.6699349,23.7034178 L12.678386,23.7104931 L12.8793402,23.8032389 C12.8914285,23.8068999 12.9022333,23.8029875 12.9078286,23.7952264 L12.9118235,23.7811639 L12.8776777,23.1665331 C12.8752882,23.1545897 12.8674102,23.1470016 12.8583906,23.1452862 L12.8583906,23.1452862 Z M12.1430473,23.1473072 C12.1332178,23.1423925 12.1221763,23.1452606 12.1156365,23.1525954 L12.1099173,23.1665331 L12.0757714,23.7811639 C12.0751323,23.7926639 12.0828099,23.8018602 12.0926481,23.8045676 L12.108256,23.8032389 L12.3092106,23.7104931 L12.3186497,23.7024347 L12.3186497,23.7024347 L12.3225043,23.6906389 L12.340401,23.2611114 L12.337245,23.2485176 L12.337245,23.2485176 L12.3277531,23.2396597 L12.1430473,23.1473072 Z"
+                                                          id="MingCute" fill-rule="nonzero"></path>
+                                                    <path d="M19.7773,4.42984 C20.8652,3.97177 22.0315,4.8917 21.8394,6.05639 L19.5705,19.8131 C19.3517,21.1395 17.8949,21.9006 16.678,21.2396 C15.6597,20.6865 14.1489,19.8352 12.7873,18.9455 C12.1074,18.5012 10.0255,17.0766 10.2814,16.0625 C10.5002,15.1954 14.0001,11.9375 16.0001,10 C16.7857,9.23893 16.4279,8.79926 15.5001,9.5 C13.1985,11.2383 9.50332,13.8812 8.28136,14.625 C7.20323,15.2812 6.64031,15.3932 5.96886,15.2812 C4.74273,15.0769 3.60596,14.7605 2.67788,14.3758 C1.42351,13.8558 1.48461,12.132 2.67703,11.63 L19.7773,4.42984 Z"
+                                                          id="路径" fill="white"></path>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </a>
+                                <a class="text-white" href="javascript:void(0)">
+                                    <i class="bi bi-whatsapp"></i>
+                                </a>
+
+                                <a class="text-white btn-menu-list btn-toggle-menu" href="javascript:void(0)">
+                                    <i class="bi bi-list"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="d-block d-lg-none" style="margin-left: 7rem;">
+                        <p class="text-white mb-0" style="line-height: 1rem; font-size:1.2rem;">
+                            Сервис и ремонт<br>горнотранспортного оборудования
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container m-auto">
+            <div class="row h-100">
+                <div class="col-12 col-lg-12 h-100 position-relative px-5">
+                    <div class="d-flex justify-content-between align-items-center h-100">
+                        <div class="container position-relative d-flex justify-content-center align-items-center">
+                            <div class="position-relative z-1 d-flex flex-column justify-content-center w-100">
+                                <div class="d-flex flex-column">
+                                    <div class="d-flex justify-content-end" style="padding-bottom: 50px;">
+                                        <a
+                                                class="d-none d-md-block order-description fs-4 text-white fw-normal mb-4 text-decoration-none lh-1"
+                                                data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                                href="javascript:void(0)">
+                                            Оставьте заявку<br> на обратный звонок
+                                        </a>
+                                    </div>
+                                    <img
+                                            class="main-description-image w-100"
+                                            src="/src/images/main2.png"
+                                            alt=""
+                                    >
+                                </div>
+                            </div>
+
+                            <img
+                                    class="main-technic-image position-absolute"
+                                    src="src/images/technic.png"
+                                    alt=""
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Мобильная версия основного блока -->
+<section id="mobile-main" class="d-md-none min-vh-100 bg-primary position-relative">
+    <div class="container position-relative">
+        <div class="row">
+            <div class="col-lg-12 py-2 position-relative z-3">
+                <nav class="navbar navbar-expand-lg py-0">
+                    <div class="container px-0">
+                        <a class="navbar-brand" href="#">
+                            <img style="width: 12rem;" src="/src/images/logotype.png" alt="Logo">
+                        </a>
+                        <div class="collapse navbar-collapse">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <span class="text-white">
+                                        Сервис и ремонт<br>горнотранспортного оборудования
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="ml-auto">
+                            <div class="d-lg-flex align-items-center gap-3 fs-3">
+                                <a class="text-white lh-0 text-decoration-none" href="javascript:void(0)">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                         width="25px" height="25px" viewBox="0 0 24 24" version="1.1">
+                                        <title>telegram_fill</title>
+                                        <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <g id="Brand" transform="translate(-672.000000, -48.000000)">
+                                                <g id="telegram_fill" transform="translate(672.000000, 48.000000)">
+                                                    <path d="M24,0 L24,24 L0,24 L0,0 L24,0 Z M12.5934901,23.257841 L12.5819402,23.2595131 L12.5108777,23.2950439 L12.4918791,23.2987469 L12.4918791,23.2987469 L12.4767152,23.2950439 L12.4056548,23.2595131 C12.3958229,23.2563662 12.3870493,23.2590235 12.3821421,23.2649074 L12.3780323,23.275831 L12.360941,23.7031097 L12.3658947,23.7234994 L12.3769048,23.7357139 L12.4804777,23.8096931 L12.4953491,23.8136134 L12.4953491,23.8136134 L12.5071152,23.8096931 L12.6106902,23.7357139 L12.6232938,23.7196733 L12.6232938,23.7196733 L12.6266527,23.7031097 L12.609561,23.275831 C12.6075724,23.2657013 12.6010112,23.2592993 12.5934901,23.257841 L12.5934901,23.257841 Z M12.8583906,23.1452862 L12.8445485,23.1473072 L12.6598443,23.2396597 L12.6498822,23.2499052 L12.6498822,23.2499052 L12.6471943,23.2611114 L12.6650943,23.6906389 L12.6699349,23.7034178 L12.6699349,23.7034178 L12.678386,23.7104931 L12.8793402,23.8032389 C12.8914285,23.8068999 12.9022333,23.8029875 12.9078286,23.7952264 L12.9118235,23.7811639 L12.8776777,23.1665331 C12.8752882,23.1545897 12.8674102,23.1470016 12.8583906,23.1452862 L12.8583906,23.1452862 Z M12.1430473,23.1473072 C12.1332178,23.1423925 12.1221763,23.1452606 12.1156365,23.1525954 L12.1099173,23.1665331 L12.0757714,23.7811639 C12.0751323,23.7926639 12.0828099,23.8018602 12.0926481,23.8045676 L12.108256,23.8032389 L12.3092106,23.7104931 L12.3186497,23.7024347 L12.3186497,23.7024347 L12.3225043,23.6906389 L12.340401,23.2611114 L12.337245,23.2485176 L12.337245,23.2485176 L12.3277531,23.2396597 L12.1430473,23.1473072 Z"
+                                                          id="MingCute" fill-rule="nonzero"></path>
+                                                    <path d="M19.7773,4.42984 C20.8652,3.97177 22.0315,4.8917 21.8394,6.05639 L19.5705,19.8131 C19.3517,21.1395 17.8949,21.9006 16.678,21.2396 C15.6597,20.6865 14.1489,19.8352 12.7873,18.9455 C12.1074,18.5012 10.0255,17.0766 10.2814,16.0625 C10.5002,15.1954 14.0001,11.9375 16.0001,10 C16.7857,9.23893 16.4279,8.79926 15.5001,9.5 C13.1985,11.2383 9.50332,13.8812 8.28136,14.625 C7.20323,15.2812 6.64031,15.3932 5.96886,15.2812 C4.74273,15.0769 3.60596,14.7605 2.67788,14.3758 C1.42351,13.8558 1.48461,12.132 2.67703,11.63 L19.7773,4.42984 Z"
+                                                          id="路径" fill="white"></path>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </a>
+                                <a class="text-white text-decoration-none" href="javascript:void(0)">
+                                    <i class="bi bi-whatsapp"></i>
+                                </a>
+
+                                <a class="text-white btn-menu-list btn-toggle-menu" href="javascript:void(0)">
+                                    <i class="bi bi-list"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <div style="
+                        margin-left: 4.6rem;
+                        line-height: 1rem;
+                    ">
+                    <span class="text-white fs-6">Сервис и ремонт<br>горнотранспортного оборудования</span>
+                </div>
+            </div>
+            <div class="col-lg-12 position-relative">
+                <div class="d-flex position-relative justify-content-center mt-2">
+                    <img
+                            class="w-100 position-relative z-1 px-4"
+                            src="/src/images/mobile-1500.png"
+                            alt=""
+                    >
+
+                    <div class="position-absolute mobile-main-technic-image">
+                        <img
+                                class="w-100"
+                                src="/src/images/mobile-technic.png"
+                                alt=""
+                        />
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <img
+                            class="w-100 px-4"
+                            src="/src/images/mobile-247.png"
+                            alt=""
+                    >
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="carousel" class="d-none d-lg-block vh-100 position-relative">
+    <div class="d-flex h-100 m-0 position-absolute z-1 h-100 w-100">
+        <div class="container">
+            <div class="row h-100">
+                <div class="col-lg-12 px-0 h-100">
+                    <div class="d-flex flex-column py-3 h-100">
+                          <span class="section-title text-white lh-1">
+                              Сервис и ремонт техники<br> любой сложности
+                         </span>
+
+                        <div class="section-text-description mt-auto mb-5">
+                            <p class="carousel-item-description text-white fs-5 lh-1">
+                                Комплекс сервисного обслуживания и ремонта любых видов<br>
+                                горнотранспортного оборудования (ГТО) включает цеха по ремонту двигателей,<br>
+                                агрегатов, гидромеханических передач и редукторов, крупногабаритных шин,<br>
+                                изготовлению рукавов высокого давления и нестандартного оборудования.<br>
+                                Парк современного станочного и технологического оборудования позволяет<br>
+                                выполнять качественную диагностику и восстановление ГТО.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="carouselExampleIndicators" class="carousel slide h-100" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
+                    aria-current="true" aria-label="Slide 1">
+            </button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
+                    aria-label="Slide 2">
+            </button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
+                    aria-label="Slide 3">
+            </button>
+
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                    aria-label="Slide 4">
+            </button>
+
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                    aria-label="Slide 5">
+            </button>
+
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                    aria-label="Slide 6">
+            </button>
         </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active"
-                 style="background-image: url('./src/images/backgrounds/2-2560х1080_0010_Layer-764.png')">
-                <div class="shadow h-100"
-                     style="background-image: url('./src/images/shadow.png'); background-size: cover">
-                    <div class="row h-100">
-                        <div class="col-12 col-lg-6 offset-3">
-                            <div class="d-flex h-100 m-0 align-items-center">
-                                <div class="d-flex flex-column">
-                      <span class="carousel-item-title text-white display-1">
-                        Сервис и ремонт техники<br> угольных предприятий<br> любой сложности
-                      </span>
-
-                                    <span class="carousel-item-description text-white fw-bold fs-4 mb-3">
-                        «Белтранс» основан в 1970 году. Комплекс по сервисному обслуживанию и ремонту любых видов горнотранспортного оборудования (ГТО) на площади 110 000 м2 включает:
-                      </span>
-
-                                    <div class="row">
-                                        <div class="col-12 col-lg-6">
-                                            <ul class="text-white fs-4">
-                                                <li>
-                                                    Цех по ремонту двигателей внутреннего сгорания
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-12 col-lg-6">
-                                            <ul class="text-white fs-4">
-                                                <li>
-                                                    Цех по ремонту двигателей внутреннего сгорания
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-
-                                    <p class="carousel-item-description text-white fs-5">
-                                        700 технических специалистов «Белтранса» имеют многолетний опыт работы
-                                        в сфере обслуживания карьерной техники, постоянно проходят подготовку
-                                        в учебных центрах предприятий-производителей продукции. Наша компания
-                                        оснащена современным оборудованием и использует только качественные
-                                        запчасти и расходные материалы. Собственный станочный парк современного
-                                        технологичного оборудования и инструментов позволяет выполнять
-                                        диагностические и восстановительные работы с высоким уровнем качества
-                                    </p>
-
-                                    <span class="carousel-item-description text-white fw-bold fs-4 mb-3">
-                        Мы предлагаем клиентам индивидуальные решения
-для стабильной работы и лидерства на рынке
-                      </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="carousel-inner h-100">
+            <div class="carousel-item active h-100"
+                 style="background-image: url('./src/images/backgrounds/1.png')">
             </div>
-
-            <div class="carousel-item"
-                 style="background-image: url('./src/images/backgrounds/2-2560х1080_0012_Layer-763.png')">
-                <div class="shadow h-100"
-                     style="background-image: url('./src/images/shadow.png'); background-size: cover">
-                    <div class="row h-100">
-                        <div class="col-12 col-lg-6 offset-3">
-                            <div class="d-flex h-100 m-0 align-items-center">
-                                <div class="d-flex flex-column">
-                      <span class="carousel-item-title text-white display-1">
-                        Сервис и ремонт техники<br> угольных предприятий<br> любой сложности
-                      </span>
-
-                                    <span class="carousel-item-description text-white fw-bold fs-4 mb-3">
-                        «Белтранс» основан в 1970 году. Комплекс по сервисному обслуживанию и ремонту любых видов горнотранспортного оборудования (ГТО) на площади 110 000 м2 включает:
-                      </span>
-
-                                    <div class="row">
-                                        <div class="col-12 col-lg-6">
-                                            <ul class="text-white fs-4">
-                                                <li>
-                                                    Цех по ремонту двигателей внутреннего сгорания
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-12 col-lg-6">
-                                            <ul class="text-white fs-4">
-                                                <li>
-                                                    Цех по ремонту двигателей внутреннего сгорания
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-
-                                    <p class="carousel-item-description text-white fs-5">
-                                        700 технических специалистов «Белтранса» имеют многолетний опыт работы
-                                        в сфере обслуживания карьерной техники, постоянно проходят подготовку
-                                        в учебных центрах предприятий-производителей продукции. Наша компания
-                                        оснащена современным оборудованием и использует только качественные
-                                        запчасти и расходные материалы. Собственный станочный парк современного
-                                        технологичного оборудования и инструментов позволяет выполнять
-                                        диагностические и восстановительные работы с высоким уровнем качества
-                                    </p>
-
-                                    <span class="carousel-item-description text-white fw-bold fs-4 mb-3">
-                        Мы предлагаем клиентам индивидуальные решения
-для стабильной работы и лидерства на рынке
-                      </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="carousel-item"
-                 style="background-image: url('./src/images/backgrounds/2-2560х1080_0011_Layer-734.png')">
-                <div class="shadow h-100"
-                     style="background-image: url('./src/images/shadow.png'); background-size: cover">
-                    <div class="row h-100">
-                        <div class="col-12 col-lg-6 offset-3">
-                            <div class="d-flex h-100 m-0 align-items-center">
-                                <div class="d-flex flex-column">
-                      <span class="carousel-item-title text-white display-1">
-                        Сервис и ремонт техники<br> угольных предприятий<br> любой сложности
-                      </span>
-
-                                    <span class="carousel-item-description text-white fw-bold fs-4 mb-3">
-                        «Белтранс» основан в 1970 году. Комплекс по сервисному обслуживанию и ремонту любых видов горнотранспортного оборудования (ГТО) на площади 110 000 м2 включает:
-                      </span>
-
-                                    <div class="row">
-                                        <div class="col-12 col-lg-6">
-                                            <ul class="text-white fs-4">
-                                                <li>
-                                                    Цех по ремонту двигателей внутреннего сгорания
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-12 col-lg-6">
-                                            <ul class="text-white fs-4">
-                                                <li>
-                                                    Цех по ремонту двигателей внутреннего сгорания
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-
-                                    <p class="carousel-item-description text-white fs-5">
-                                        700 технических специалистов «Белтранса» имеют многолетний опыт работы
-                                        в сфере обслуживания карьерной техники, постоянно проходят подготовку
-                                        в учебных центрах предприятий-производителей продукции. Наша компания
-                                        оснащена современным оборудованием и использует только качественные
-                                        запчасти и расходные материалы. Собственный станочный парк современного
-                                        технологичного оборудования и инструментов позволяет выполнять
-                                        диагностические и восстановительные работы с высоким уровнем качества
-                                    </p>
-
-                                    <span class="carousel-item-description text-white fw-bold fs-4 mb-3">
-                        Мы предлагаем клиентам индивидуальные решения
-для стабильной работы и лидерства на рынке
-                      </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <div class="carousel-item h-100" style="background-image: url('src/images/backgrounds/2.png')"></div>
+            <div class="carousel-item h-100" style="background-image: url('src/images/backgrounds/3.png')"></div>
+            <div class="carousel-item h-100" style="background-image: url('src/images/backgrounds/4.png')"></div>
+            <div class="carousel-item h-100" style="background-image: url('src/images/backgrounds/5.png')"></div>
+            <div class="carousel-item h-100" style="background-image: url('src/images/backgrounds/6.png')"></div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
                 data-bs-slide="prev">
@@ -302,311 +411,60 @@
     </div>
 </section>
 
-<section id="services" class="bg-primary py-5">
-    <div class="container-fluid">
+<section id="mobile-company-description" class="d-lg-none d-block bg-primary min-vh-100">
+    <div class="container py-3">
         <div class="row">
-            <div class="col-12 col-lg-6 offset-lg-3">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="row">
-                            <div class="col-12 col-lg-6">
-                               <span class="d-block section-title text-uppercase fs-1 text-white mb-5">
-                                    Производственный сервис
-                                </span>
-                            </div>
+            <div class="col-lg-12">
+                <span class="section-title text-uppercase h1 text-white mb-2 d-block lh-1">
+                    Сервис и ремонт техники<br>угольных предприятий<br>любой сложности
+                </span>
+
+                <span class="text-white fw-semibold d-block mb-3 fs-6 lh-1">
+                    «Белтранс» основан в 1970 году.<br>Комплекс по сервисному<br>обслуживанию и ремонту любых<br>видов
+                    горнотранспортного<br> оборудования (ГТО) на площади<br>110 000 м2 включает: <br>
+                </span>
+
+                <div class="d-flex flex-column gap-2 lh-1">
+                    <div class="d-flex">
+                        <div class="me-2">
+                            <span class="dot"></span>
                         </div>
 
-                        <div class="row">
-                            <div class="col-6">
-                                <div class="row">
-                                    <div class="col-2">
-                                        <img
-                                            class="w-100 services-service-image"
-                                            src="/src/images/services/2-2560х1080_0018_Vector-Smart-Object.png"
-                                            alt=""
-                                        >
-                                    </div>
+                        <span class="text-white fw-semibold">Цех по ремонту двигателей внутреннего сгорания</span>
+                    </div>
 
-                                    <div class="col">
-                                        <div class="w-100% d-flex flex-column text-white px-2">
-                                        <span class="fs-5">
-                                            Ремонт пневмо-гидроподвесок (ПГП),
-                                            цилиндров опрокидывающего
-                                            механизма (ЦОМ), цилиндров
-                                            поворота
-                                        </span>
-                                            <p>БЕЛАЗ всех моделей и модификаций</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-2">
-                                        <img
-                                                class="w-100 services-service-image"
-                                                src="/src/images/services/2-2560х1080_0018_Vector-Smart-Object.png"
-                                                alt=""
-                                        >
-                                    </div>
-
-                                    <div class="col">
-                                        <div class="w-100% d-flex flex-column text-white px-2">
-                                        <span class="fs-5">
-                                            Ремонт пневмо-гидроподвесок (ПГП),
-                                            цилиндров опрокидывающего
-                                            механизма (ЦОМ), цилиндров
-                                            поворота
-                                        </span>
-                                            <p>БЕЛАЗ всех моделей и модификаций</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-2">
-                                        <img
-                                                class="w-100 services-service-image"
-                                                src="/src/images/services/2-2560х1080_0018_Vector-Smart-Object.png"
-                                                alt=""
-                                        >
-                                    </div>
-
-                                    <div class="col">
-                                        <div class="w-100% d-flex flex-column text-white px-2">
-                                        <span class="fs-5">
-                                            Ремонт пневмо-гидроподвесок (ПГП),
-                                            цилиндров опрокидывающего
-                                            механизма (ЦОМ), цилиндров
-                                            поворота
-                                        </span>
-                                            <p>БЕЛАЗ всех моделей и модификаций</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-2">
-                                        <img
-                                                class="w-100 services-service-image"
-                                                src="/src/images/services/2-2560х1080_0018_Vector-Smart-Object.png"
-                                                alt=""
-                                        >
-                                    </div>
-
-                                    <div class="col">
-                                        <div class="w-100% d-flex flex-column text-white px-2">
-                                        <span class="fs-5">
-                                            Ремонт пневмо-гидроподвесок (ПГП),
-                                            цилиндров опрокидывающего
-                                            механизма (ЦОМ), цилиндров
-                                            поворота
-                                        </span>
-                                            <p>БЕЛАЗ всех моделей и модификаций</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-2">
-                                        <img
-                                                class="w-100 services-service-image"
-                                                src="/src/images/services/2-2560х1080_0018_Vector-Smart-Object.png"
-                                                alt=""
-                                        >
-                                    </div>
-
-                                    <div class="col">
-                                        <div class="w-100% d-flex flex-column text-white px-2">
-                                        <span class="fs-5">
-                                            Ремонт пневмо-гидроподвесок (ПГП),
-                                            цилиндров опрокидывающего
-                                            механизма (ЦОМ), цилиндров
-                                            поворота
-                                        </span>
-                                            <p>БЕЛАЗ всех моделей и модификаций</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-2">
-                                        <img
-                                                class="w-100 services-service-image"
-                                                src="/src/images/services/2-2560х1080_0018_Vector-Smart-Object.png"
-                                                alt=""
-                                        >
-                                    </div>
-
-                                    <div class="col">
-                                        <div class="w-100% d-flex flex-column text-white px-2">
-                                        <span class="fs-5">
-                                            Ремонт пневмо-гидроподвесок (ПГП),
-                                            цилиндров опрокидывающего
-                                            механизма (ЦОМ), цилиндров
-                                            поворота
-                                        </span>
-                                            <p>БЕЛАЗ всех моделей и модификаций</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-6">
-                                <div class="row">
-                                    <div class="col-2">
-                                        <img
-                                                class="w-100 services-service-image"
-                                                src="/src/images/services/2-2560х1080_0018_Vector-Smart-Object.png"
-                                                alt=""
-                                        >
-                                    </div>
-
-                                    <div class="col">
-                                        <div class="w-100% d-flex flex-column text-white px-2">
-                                        <span class="fs-5">
-                                            Ремонт пневмо-гидроподвесок (ПГП),
-                                            цилиндров опрокидывающего
-                                            механизма (ЦОМ), цилиндров
-                                            поворота
-                                        </span>
-                                            <p>БЕЛАЗ всех моделей и модификаций</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-2">
-                                        <img
-                                                class="w-100 services-service-image"
-                                                src="/src/images/services/2-2560х1080_0018_Vector-Smart-Object.png"
-                                                alt=""
-                                        >
-                                    </div>
-
-                                    <div class="col">
-                                        <div class="w-100% d-flex flex-column text-white px-2">
-                                        <span class="fs-5">
-                                            Ремонт пневмо-гидроподвесок (ПГП),
-                                            цилиндров опрокидывающего
-                                            механизма (ЦОМ), цилиндров
-                                            поворота
-                                        </span>
-                                            <p>БЕЛАЗ всех моделей и модификаций</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-2">
-                                        <img
-                                                class="w-100 services-service-image"
-                                                src="/src/images/services/2-2560х1080_0018_Vector-Smart-Object.png"
-                                                alt=""
-                                        >
-                                    </div>
-
-                                    <div class="col">
-                                        <div class="w-100% d-flex flex-column text-white px-2">
-                                        <span class="fs-5">
-                                            Ремонт пневмо-гидроподвесок (ПГП),
-                                            цилиндров опрокидывающего
-                                            механизма (ЦОМ), цилиндров
-                                            поворота
-                                        </span>
-                                            <p>БЕЛАЗ всех моделей и модификаций</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-2">
-                                        <img
-                                                class="w-100 services-service-image"
-                                                src="/src/images/services/2-2560х1080_0018_Vector-Smart-Object.png"
-                                                alt=""
-                                        >
-                                    </div>
-
-                                    <div class="col">
-                                        <div class="w-100% d-flex flex-column text-white px-2">
-                                        <span class="fs-5">
-                                            Ремонт пневмо-гидроподвесок (ПГП),
-                                            цилиндров опрокидывающего
-                                            механизма (ЦОМ), цилиндров
-                                            поворота
-                                        </span>
-                                            <p>БЕЛАЗ всех моделей и модификаций</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-2">
-                                        <img
-                                                class="w-100 services-service-image"
-                                                src="/src/images/services/2-2560х1080_0018_Vector-Smart-Object.png"
-                                                alt=""
-                                        >
-                                    </div>
-
-                                    <div class="col">
-                                        <div class="w-100% d-flex flex-column text-white px-2">
-                                        <span class="fs-5">
-                                            Ремонт пневмо-гидроподвесок (ПГП),
-                                            цилиндров опрокидывающего
-                                            механизма (ЦОМ), цилиндров
-                                            поворота
-                                        </span>
-                                            <p>БЕЛАЗ всех моделей и модификаций</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-2">
-                                        <img
-                                                class="w-100 services-service-image"
-                                                src="/src/images/services/2-2560х1080_0018_Vector-Smart-Object.png"
-                                                alt=""
-                                        >
-                                    </div>
-
-                                    <div class="col">
-                                        <div class="w-100% d-flex flex-column text-white px-2">
-                                        <span class="fs-5">
-                                            Ремонт пневмо-гидроподвесок (ПГП),
-                                            цилиндров опрокидывающего
-                                            механизма (ЦОМ), цилиндров
-                                            поворота
-                                        </span>
-                                            <p>БЕЛАЗ всех моделей и модификаций</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-2">
-                                        <img
-                                                class="w-100 services-service-image"
-                                                src="/src/images/services/2-2560х1080_0018_Vector-Smart-Object.png"
-                                                alt=""
-                                        >
-                                    </div>
-
-                                    <div class="col">
-                                        <div class="w-100% d-flex flex-column text-white px-2">
-                                        <span class="fs-5">
-                                            Ремонт пневмо-гидроподвесок (ПГП),
-                                            цилиндров опрокидывающего
-                                            механизма (ЦОМ), цилиндров
-                                            поворота
-                                        </span>
-                                            <p>БЕЛАЗ всех моделей и модификаций</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="d-flex">
+                        <div class="me-2">
+                            <span class="dot"></span>
                         </div>
+
+                        <span class="text-white fw-semibold">Цех по ремонту<br> гидромеханических передач<br> и редукторов</span>
+                    </div>
+
+                    <div class="d-flex">
+                        <div class="me-2">
+                            <span class="dot"></span>
+                        </div>
+
+                        <span class="text-white fw-semibold">Цех по ремонту агрегатов</span>
+                    </div>
+
+                    <div class="d-flex">
+                        <div class="me-2">
+                            <span class="dot"></span>
+                        </div>
+
+                        <span class="text-white fw-semibold">Цех по изготовлению рукавов высокого давления</span>
+                    </div>
+
+                    <div class="d-flex">
+                        <div class="me-2">
+                            <span class="dot"></span>
+                        </div>
+
+                        <span class="text-white fw-semibold">
+                            Цех по ремонту и изготовлению нестандартного оборудования производственные склады
+                        </span>
                     </div>
                 </div>
             </div>
@@ -614,44 +472,320 @@
     </div>
 </section>
 
-<section id="service" class="vh-100">
+<section
+        id="mobile-description"
+        class="d-md-none d-block position-relative min-vh-100"
+        style="
+        background: url('/src/images/backgrounds/2-2560х1080_0011_Layer-734.png') no-repeat;
+        background-size: cover;
+        background-position-x: 20%;
+    "
+>
     <div
-        class="h-100"
-        style="background-image: url('./src/images/backgrounds/backgroup-section-2.png'); background-size: cover"
-    >
-        <div class="container-fluid h-100">
-            <div class="row h-100">
-                <div class="col-12 col-lg-6 offset-3">
-                    <div class="row h-100">
-                        <div class="col-12 offset-6 col-lg-6 d-flex align-items-center">
-                            <div class="d-flex flex-column">
-                                <span class="d-block h1 text-primary">
-                                    Выездной сервис
-                                </span>
-                                <ul class="text-primary fs-3">
-                                    <li>
-                                        Мобильные сервисные бригады плановое ТО, диагностика,
-                                        текущий ремонт
-                                    </li>
+            class="position-absolute z-1 w-100 h-100"
+            style="background: rgba(0,0,0, 0.5)"
+    ></div>
+    <div class="container position-relative z-2 py-5">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="d-flex flex-column mobile-description-text">
+                    <p class="text-white fw-semibold fs-6">
+                        700 технических специалистов «Белтранса»<br>
+                        имеют многолетний опыт работы в сфере<br> обслуживания карьерной техники,<br>
+                        постоянно проходят подготовку в учебных<br>
+                        центрах предприятий-производителей<br>продукции.<br>
+                        Наша компания оснащена современным<br>
+                        оборудованием и использует только<br>
+                        качественные запчасти и расходные<br>
+                        материалы. Собственный станочный<br>
+                        парк современного технологичного<br>
+                        оборудования и инструментов<br>
+                        позволяет выполнять диагностические<br>
+                        и восстановительные работы<br>
+                        с высоким уровнем качества
+                    </p>
+                    <p class="text-white fw-semibold fs-5">
+                        Мы предлагаем клиентам<br>
+                        индивидуальные решения<br>
+                        для стабильной работы<br>
+                        и лидерства на рынке
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-                                    <li>
-                                        Установка систем пожаротушения
-                                        и централизованных
-                                        систем смазки
-                                    </li>
+    <div class="mobile-description-footer position-absolute z-3 bottom-0 w-100">
+        <div class="d-flex justify-content-center w-100 my-4">
+            <a data-toggle="opened" href="javascript:void(0)" class="description-toggle text-white fs-3"
+               style="text-decoration-style: dotted; ">
+                Свернуть <i class="bi bi-chevron-double-up"></i>
+            </a>
+        </div>
+    </div>
+</section>
 
-                                    <li>
-                                        Расточно-наплавочные работы
-                                    </li>
+<section id="services" class="bg-primary py-3 min-vh-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-12 col-lg-6">
+                               <span class="d-none d-md-block section-title text-uppercase h1 text-white mb-4">
+                                 Производственный сервис
+                               </span>
+                                <span class="d-block d-md-none section-title text-uppercase h1 text-white mb-2">
+                                 Производственный<br>сервис
+                               </span>
+                            </div>
+                        </div>
 
-                                    <li>
-                                        Лаборатория неразрушающего контроля
-                                    </li>
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="d-flex justify-content-center justify-content-md-start gap-3">
+                                            <div style="width: 50px; padding-top: 8px">
+                                                <img
+                                                        class="w-100 services-service-image"
+                                                        src="/src/images/services/2-2560х1080_0018_Vector-Smart-Object.png"
+                                                        alt=""
+                                                >
+                                            </div>
+                                            <div class="d-flex text-white flex-column" style="min-width: 250px;">
+                                            <span class="d-block fs-5">
+                                                Ремонт двигателей<br>внутреннего сгорания
+                                            </span>
+                                                <p>ЯМЗ, КАМАЗ, ГАЗ, Cummins,<br> Weichai, Cat</p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-center justify-content-md-start gap-3">
+                                            <div style="width: 50px; padding-top: 8px">
+                                                <img
+                                                        class="w-100 services-service-image"
+                                                        src="/src/images/services/2-2560х1080_0016_Vector-Smart-Object.png"
+                                                        alt=""
+                                                >
+                                            </div>
+                                            <div class="d-flex text-white flex-column" style="min-width: 250px;">
+                                                <span class="fs-5">
+                                                    Ремонт гидромеханической<br>передачи, КПП и редуктора
+                                                </span>
+                                                <p>Белаз, Komatsu</p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-center justify-content-md-start gap-3">
+                                            <div style="width: 50px; padding-top: 8px">
+                                                <img
+                                                        class="w-100 services-service-image"
+                                                        src="/src/images/services/2-2560х1080_0027_Vector-Smart-Object.png"
+                                                        alt=""
+                                                >
+                                            </div>
+                                            <div class="d-flex text-white flex-column" style="min-width: 250px;">
+                                                 <span class="fs-5">
+                                                    Ремонт редукторов мотор-колес<br>(РМК), колесных дисков,<br> крупногабаритных шин (КГШ)
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-center justify-content-md-start gap-3">
+                                            <div style="width: 50px; padding-top: 8px">
+                                                <img
+                                                        class="w-100 services-service-image"
+                                                        src="/src/images/services/2-2560х1080_0012_Vector-Smart-Object.png"
+                                                        alt=""
+                                                >
+                                            </div>
+                                            <div class="d-flex text-white flex-column" style="min-width: 250px;">
+                                               <span class="fs-5">
+                                                    Ремонт пневмо-гидроподвесок (ПГП),<br>
+                                                    цилиндров опрокидывающего<br>
+                                                    механизма (ЦОМ), цилиндров<br>
+                                                    поворота
+                                               </span>
+                                                <p>БЕЛАЗ всех моделей и модификаций</p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-center justify-content-md-start gap-3">
+                                            <div style="width: 50px; padding-top: 8px">
+                                                <img
+                                                        class="w-100 services-service-image"
+                                                        src="/src/images/services/2-2560х1080_0011_Vector-Smart-Object.png"
+                                                        alt=""
+                                                >
+                                            </div>
+                                            <div class="d-flex text-white flex-column" style="min-width: 250px;">
+                                                <span class="fs-5">
+                                                    Ремонт редуктора<br>
+                                                    заднего моста (РЗМ)
+                                                </span>
+                                                <p>БЕЛАЗ, Komatsu</p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-center justify-content-md-start gap-3">
+                                            <div style="width: 50px; padding-top: 8px">
+                                                <img
+                                                        class="w-100 services-service-image"
+                                                        src="/src/images/services/2-2560х1080_0032_Vector-Smart-Object.png"
+                                                        alt=""
+                                                >
+                                            </div>
+                                            <div class="d-flex text-white flex-column" style="min-width: 250px;">
+                                              <span class="fs-5">
+                                                Капитальный ремонт<br>
+                                                и футеровка ковшей<br>
+                                                объемом от 3 до 20 м
+                                              </span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-center justify-content-md-start gap-3">
+                                            <div style="width: 50px; padding-top: 8px">
+                                                <img
+                                                        class="w-100 services-service-image"
+                                                        src="/src/images/services/2-2560х1080_0033_Vector-Smart-Object.png"
+                                                        alt=""
+                                                >
+                                            </div>
+                                            <div class="d-flex text-white flex-column" style="min-width: 250px;">
+                                                <span class="fs-5">
+                                                   Изготовление рукавов<br>
+                                                   высокого давления (РВД)
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-                                    <li>
-                                        Выездные сварочные бригады
-                                    </li>
-                                </ul>
+                            <div class="col-12 col-md-6">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="d-flex justify-content-center justify-content-md-start gap-3">
+                                            <div style="width: 50px; padding-top: 8px">
+                                                <img
+                                                        class="w-100 services-service-image"
+                                                        src="/src/images/services/2-2560х1080_0025_Vector-Smart-Object.png"
+                                                        alt=""
+                                                >
+                                            </div>
+                                            <div class="d-flex text-white flex-column" style="min-width: 250px;">
+                                                <span class="d-block fs-5">
+                                                    Восстановление стрел<br>
+                                                    и рукоятей карьерных<br>
+                                                    экскаваторов
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-center justify-content-md-start gap-3">
+                                            <div style="width: 50px; padding-top: 8px">
+                                                <img
+                                                        class="w-100 services-service-image"
+                                                        src="/src/images/services/2-2560х1080_0034_Vector-Smart-Object.png"
+                                                        alt=""
+                                                >
+                                            </div>
+                                            <div class="d-flex text-white flex-column" style="min-width: 250px;">
+                                                 <span class="fs-5">
+                                                    Ремонт электронных<br>блоков управления
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-center justify-content-md-start gap-3">
+                                            <div style="width: 50px; padding-top: 8px">
+                                                <img
+                                                        class="w-100 services-service-image"
+                                                        src="/src/images/services/2-2560х1080_0035_Vector-Smart-Object.png"
+                                                        alt=""
+                                                >
+                                            </div>
+                                            <div class="d-flex text-white flex-column" style="min-width: 250px;">
+                                                 <span class="fs-5">
+                                                    Капитальный и текущий<br>ремонт рам и платформ<br>карьерных самосвалов
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-center justify-content-md-start gap-3">
+                                            <div style="width: 50px; padding-top: 8px">
+                                                <img
+                                                        class="w-100 services-service-image"
+                                                        src="/src/images/services/2-2560х1080_0007_Vector-Smart-Object.png"
+                                                        alt=""
+                                                >
+                                            </div>
+                                            <div class="d-flex text-white flex-column" style="min-width: 250px;">
+                                                <span class="fs-5">
+                                                    Ремонт рабочего<br>
+                                                    оборудования тракторно-<br>
+                                                    бульдозерной техники (ТБУ)
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-center justify-content-md-start gap-3">
+                                            <div style="width: 50px; padding-top: 8px">
+                                                <img
+                                                        class="w-100 services-service-image"
+                                                        src="/src/images/services/2-2560х1080_0036_Vector-Smart-Object.png"
+                                                        alt=""
+                                                >
+                                            </div>
+                                            <div class="d-flex text-white flex-column" style="min-width: 250px;">
+                                               <span class="fs-5">
+                                                    Работа на станках<br>
+                                                    с программным<br>
+                                                    управлением (ЧПУ)
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-center justify-content-md-start gap-3">
+                                            <div style="width: 50px; padding-top: 8px">
+                                                <img
+                                                        class="w-100 services-service-image"
+                                                        src="/src/images/services/2-2560х1080_0005_Vector-Smart-Object.png"
+                                                        alt=""
+                                                >
+                                            </div>
+                                            <div class="d-flex text-white flex-column" style="min-width: 250px;">
+                                       <span class="fs-5">
+                                           Услуги лазерной<br>резки металла
+                                       </span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-center justify-content-md-start gap-3">
+                                            <div style="width: 50px; padding-top: 8px">
+                                                <img
+                                                        class="w-100 services-service-image"
+                                                        src="/src/images/services/2-2560х1080_0037_Vector-Smart-Object.png"
+                                                        alt=""
+                                                >
+                                            </div>
+                                            <div class="d-flex text-white flex-column" style="min-width: 250px;">
+                                        <span class="fs-5">
+                                            Изготовление нестандартного<br>
+                                            оборудования
+                                        </span>
+                                                <p>ЯМЗ, КАМАЗ, ГАЗ, Cummins, Weichai, Cat</p>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-center justify-content-md-start gap-3">
+                                            <div style="width: 50px; padding-top: 8px">
+                                                <img
+                                                        class="w-100 services-service-image"
+                                                        src="/src/images/services/2-2560х1080_0038_Vector-Smart-Object.png"
+                                                        alt=""
+                                                >
+                                            </div>
+                                            <div class="d-flex text-white flex-column" style="min-width: 250px;">
+                                       <span class="fs-5">
+                                          Изготовление<br>
+                                          металлоизделий
+                                       </span>
+                                                <p>3D забора с элементами (калитки, ворота), профлиста</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -661,83 +795,261 @@
     </div>
 </section>
 
-<section id="contact" class="bg-primary py-5 vh-100">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 col-lg-6 offset-lg-3">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="row">
-                            <div class="col-12 col-lg-6">
-                               <span class="d-block section-title text-uppercase fs-1 text-white mb-5">
-                                    Контакты
-                                </span>
-                                <form>
-                                    <div class="form-group">
-                                        <label class="w-100">
-                                            <input name="name" type="text" class="form-control" placeholder="Имя">
-                                        </label>
+<section
+        id="service"
+        style="
+        background: url('src/images/backgrounds/backgroup-section-2.png') no-repeat, #3c3c3c;
+        background-size: cover;
+        min-height: 100vh;
+        background-position-x: 30%;
+    "
+        class="position-relative"
+>
+    <div class="backdrop position-absolute w-100 h-100"></div>
+    <div class="position-relative z-3 container py-3 vh-100">
+        <div class="row h-100">
+            <div class="col-lg-12 h-100">
+                <div class="d-flex flex-column h-100">
+                    <div class="d-flex justify-content-start justify-content-md-end mb-4">
+                        <span class="d-block h1 text-primary section-title">
+                            Выездной сервис
+                        </span>
+                    </div>
+
+                    <div class="row h-100">
+                        <div class="d-none d-md-block col"></div>
+                        <div class="col-12 col-lg-6 h-100 d-flex align-items-center justify-content-start justify-content-lg-end">
+                            <ul class="position-absolute away-list list-unstyled d-flex flex-column gap-4 fs-5">
+                                <li class="d-flex">
+                                    <div class="mx-2">
+                                        <span class="dot"></span>
                                     </div>
-
-                                    <div class="form-group">
-                                        <label class="w-100">
-                                            <input name="phone" type="tel" class="form-control" placeholder="Контактный номер">
-                                        </label>
+                                    <div style="width: 15rem;">
+                                        Мобильные сервисные<br> бригады плановое ТО,<br> диагностика, текущий ремонт
                                     </div>
+                                </li>
 
-                                    <div class="form-group">
-                                        <label class="w-100">
-                                            <textarea
-                                                name="description"
-                                                class="form-control"
-                                                placeholder="Заинтересовавшая вас тема"
-                                            ></textarea>
-                                        </label>
+                                <li class="d-flex">
+                                    <div class="mx-2">
+                                        <span class="dot"></span>
                                     </div>
+                                    <div style="width: 15rem;">
+                                        Установка систем<br>пожаротушения<br> и централизованных<br> систем смазки
+                                    </div>
+                                </li>
 
-                                    <button class="btn btn-primary border-3 fw-bold">
-                                        Отправить
-                                    </button>
-                                </form>
+                                <li class="d-flex">
+                                    <div class="mx-2">
+                                        <span class="dot"></span>
+                                    </div>
+                                    <div style="width: 15rem;">
+                                        Расточно-наплавочные<br> работы
+                                    </div>
+                                </li>
 
-                                <div class="d-flex flex-column mb-2">
-                                    <span class="text-white fs-3">
-                                        Приемная
-                                    </span>
+                                <li class="d-flex">
+                                    <div class="mx-2">
+                                        <span class="dot"></span>
+                                    </div>
+                                    <div style="width: 15rem;">
+                                        Лаборатория<br> неразрушающего<br> контроля
+                                    </div>
+                                </li>
 
-                                    <a class="text-decoration-none text-white fw-bold fs-3" href="">
-                                        +7&nbsp;(384-52)&nbsp;6-06-07
-                                    </a>
-                                </div>
-
-                                <div class="d-flex flex-column mb-2">
-                                    <span class="text-white">
-                                        Приемная
-                                    </span>
-
-                                    <a class="text-decoration-none text-white fw-bold fs-3" href="">
-                                        +7&nbsp;(384-52)&nbsp;6-06-07
-                                    </a>
-                                    <a class="text-decoration-none text-white fw-bold fs-3" href="tel:+79134100845">
-                                        +7&nbsp;913-410-08-45
-                                    </a>
-                                </div>
-
-                                <a class="text-decoration-none text-white fw-bold fs-3" href="">
-                                    Кемеровская область-Кузбасс<br>
-                                    г. Белово, ул. Громовой, д. 17
-                                </a>
-
-                                <a class="fw-bold fs-4" href="mailto:trade@beltrans.pro">
-                                    trade@beltrans.pro
-                                </a>
-                            </div>
-                            <div class="col-12 col-lg-6">
-                                <img class="w-100" src="./src/images/map.png" alt="">
-                            </div>
+                                <li class="d-flex">
+                                    <div class="mx-2">
+                                        <span class="dot"></span>
+                                    </div>
+                                    <div style="width: 15rem;">
+                                        Выездные<br> сварочные бригады
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Модальное окон -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content rounded-0 bg-primary">
+            <div class="modal-body">
+                <div class="d-flex justify-content-between mb-2">
+                    <h5 class="modal-title text-white fw-bold" id="exampleModalLabel">
+                        Оставьте заявку<br> на обратный звонок
+                    </h5>
+
+                    <div>
+                        <button type="button" class="btn text-white" data-bs-dismiss="modal" aria-label="Close">
+                            <i class="bi bi-x-lg"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <form name="order" class="d-flex flex-column gap-2">
+                    <label class="w-100">
+                        <input name="name" type="text" class="form-control" placeholder="Имя">
+                    </label>
+
+                    <label class="w-100">
+                        <input name="phone" type="tel" class="form-control" placeholder="Контактный телефон">
+                    </label>
+
+                    <label class="w-100">
+                        <textarea name="description" class="form-control"
+                                  placeholder="Заинтересовавшая вас тема"></textarea>
+                    </label>
+
+                    <div class="actions d-flex">
+                        <button class="btn btn-primary">
+                            Отправить
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Товары в наличии -->
+<section id="goods" class="bg-primary py-2" style="min-height: 100vh">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="d-flex flex-column gap-5">
+                   <span class="d-block section-title text-uppercase text-white mb-3">
+                    Товары в наличии
+                   </span>
+
+                    <div class="row">
+                        <div class="col-12 col-md-6 position-relative" style="height: 45vh">
+                            <div
+                                    class="position-absolute h-100 w-100 z-1"
+                                    style="background-image: url('./src/images/goods/Group 1.png'); background-size: cover;">
+                            </div>
+
+                            <span class="d-block ps-3 pt-3 position-relative z-3 fw-bold fs-4 text-white lh-1">
+                                Редукторы мотор-колеса<br>
+                                БЕЛАЗ-75132 и 75306<br>
+                                восстановленные
+                            </span>
+                        </div>
+                        <div class="col-12 col-md-6 position-relative" style="height: 45vh">
+                            <div
+                                    class="position-absolute h-100 w-100 z-1"
+                                    style="background-image: url('./src/images/goods/railway.png'); background-size: cover;">
+                            </div>
+
+                            <span class="d-block ps-3 pt-3 position-relative z-3 fw-bold fs-4 text-white lh-1">
+                                Бытовые<br> вагончики
+                            </span>
+                        </div>
+                        <div class="col-12 col-md-6 position-relative" style="height: 45vh">
+                            <div
+                                    class="position-absolute h-100 w-100 z-1"
+                                    style="background-image: url('./src/images/goods/fence.png'); background-size: cover;">
+                            </div>
+
+                            <span class="d-block ps-3 pt-3 position-relative z-3 fw-bold fs-4 text-white lh-1">
+                                3D забор
+                            </span>
+                        </div>
+                        <div class="col-12 col-md-6 position-relative" style="height: 45vh">
+                            <div
+                                    class="position-absolute h-100 w-100 z-1"
+                                    style="background-image: url('./src/images/goods/metall.png'); background-size: cover;">
+                            </div>
+
+                            <span class="d-block ps-3 pt-3 position-relative z-3 fw-bold fs-4 text-white lh-1">
+                                Профлист
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Контактная информация -->
+<section id="contact" class="bg-primary py-3" style="min-height: 100vh">
+    <div class="container">
+        <div class="row">
+            <div class="col-8 col-md-6">
+               <span class="d-block section-title text-uppercase text-white mb-3">
+                    Контакты
+                </span>
+                <form class="mb-4">
+                    <div class="form-group">
+                        <label class="w-100">
+                            <input autocomplete="off" name="name" type="text" class="form-control" placeholder="Имя">
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="w-100">
+                            <input autocomplete="off" name="phone" type="tel" class="form-control"
+                                   placeholder="Контактный номер">
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="w-100">
+                            <textarea
+                                    name="description"
+                                    class="form-control"
+                                    placeholder="Заинтересовавшая вас тема"
+                            ></textarea>
+                        </label>
+                    </div>
+
+                    <button class="btn btn-primary border-3 fw-bold">
+                        Отправить
+                    </button>
+                </form>
+
+                <div class="d-flex flex-column mb-2">
+                    <span class="text-white">
+                        Приемная
+                    </span>
+
+                    <a class="text-decoration-none text-white fw-bold fs-5" href="">
+                        +7&nbsp;(384-52)&nbsp;6-06-07
+                    </a>
+                </div>
+
+                <div class="d-flex flex-column mb-2">
+                    <span class="text-white">
+                        Коммерческий отдел
+                    </span>
+
+                    <a class="text-decoration-none text-white fw-bold fs-4" href="">
+                        +7&nbsp;(384-52)&nbsp;6-06-07
+                    </a>
+                    <a class="text-decoration-none text-white fw-bold fs-4" href="tel:+79134100845">
+                        +7&nbsp;913-410-08-45
+                    </a>
+                </div>
+
+                <a
+                        class="text-decoration-none text-white fw-bold fs-4"
+                        style="line-height: 1.5rem"
+                        href="javascript:void(0)"
+                >
+                    <span class="fs-4" style="white-space: nowrap">Кемеровская область-Кузбасс</span>
+                    <span class="fs-4" style="white-space: nowrap">г. Белово, ул. Громовой, д. 17</span>
+                </a>
+                <br>
+                <a class="fw-bold fs-4" href="mailto:trade@beltrans.pro" style="color: #619eff">
+                    trade@beltrans.pro
+                </a>
+            </div>
+            <div class="d-none d-lg-block col-lg-6">
+                <img class="w-100" src="/src/images/map.png" alt="">
             </div>
         </div>
     </div>
