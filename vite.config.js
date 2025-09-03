@@ -4,8 +4,8 @@ export default () => {
     return defineConfig({
         base: 'beltrans-app.github.io',
         //...(mode === 'production' ? {} : {base: 'beltrans-app.github.io'}),
-        // build: {
-        //     outDir: '../beltrans.local/www'
-        // }
+        build: {
+            outDir: './dist/beltrans-app.github.io'
+        }
     })
 }
