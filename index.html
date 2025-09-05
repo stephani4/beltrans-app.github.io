@@ -48,7 +48,6 @@
                                 <a onclick="scrollToElement('#carousel'); toggleMenuEvent();" class="text-black"
                                    href="javascript:void(0)">
                                     Сервис и ремонт техники<br>
-                                    угольных предприятий<br>
                                     любой сложности
                                 </a>
 
@@ -164,9 +163,9 @@
 </div>
 
 <!-- Основной блок -->
-<header id="main">
+<header id="main mt-5">
     <div class="position-relative d-none d-md-flex flex-column bg-primary min-vh-100">
-        <div class="container position-relative" style="z-index: 999">
+        <div class="container position-relative mt-4" style="z-index: 999">
             <div class="row">
                 <div class="col-lg-12">
                     <nav class="navbar navbar-expand-lg">
@@ -176,7 +175,7 @@
                         <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <p class="text-white mb-0" style="line-height: 1rem; font-size:1.2rem;">
+                                    <p class="text-white mb-0" style="line-height: 1.3rem; font-size:1.2rem;">
                                         Сервис и ремонт<br>горнотранспортного оборудования
                                     </p>
                                 </li>
@@ -344,13 +343,23 @@
         <div class="container">
             <div class="row h-100">
                 <div class="col-lg-12 px-0 h-100">
-                    <div class="d-flex flex-column py-3 h-100">
-                          <span class="section-title text-white lh-1">
-                              Сервис и ремонт техники<br> любой сложности
-                         </span>
+                    <div class="d-flex flex-column py-4 h-100">
+                          <div class="position-relative">
+                              <div class="bg-shadow position-absolute w-100 h-100" style="background: url('/src/images/shadows/shadow-title.png')"></div>
+                              <span class="section-title text-white lh-1">
+                                  Сервис и ремонт техники<br> любой сложности
+                             </span>
+                          </div>
 
                         <div class="section-text-description mt-auto mb-5">
-                            <p class="carousel-item-description text-white fs-5 lh-1">
+                            <p
+                                class="carousel-item-description text-white fs-4 lh-1"
+                                style="
+                                    padding-right: calc(var(--bs-gutter-x) * 0.5);
+                                    padding-left: calc(var(--bs-gutter-x) * 0.5);
+                                    line-height: 1.9rem !important;
+                                "
+                            >
                                 Комплекс сервисного обслуживания и ремонта любых видов<br>
                                 горнотранспортного оборудования (ГТО) включает цеха по ремонту двигателей,<br>
                                 агрегатов, гидромеханических передач и редукторов, крупногабаритных шин,<br>
@@ -416,7 +425,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <span class="section-title text-uppercase h1 text-white mb-2 d-block lh-1">
-                    Сервис и ремонт техники<br>угольных предприятий<br>любой сложности
+                    Сервис и ремонт техники<br>любой сложности
                 </span>
 
                 <span class="text-white fw-semibold d-block mb-3 fs-6 lh-1">
@@ -525,7 +534,7 @@
     </div>
 </section>
 
-<section id="services" class="bg-primary py-3 min-vh-100">
+<section id="services" class="bg-primary py-4 min-vh-100">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -542,12 +551,12 @@
                             </div>
                         </div>
 
-                        <div class="row">
+                        <div class="row manufacturing-services">
                             <div class="col-12 col-md-6">
                                 <div class="row">
-                                    <div class="col-lg-12">
+                                    <div class="col-lg-12 d-flex flex-column gap-3">
                                         <div class="d-flex justify-content-center justify-content-md-start gap-3">
-                                            <div style="width: 50px; padding-top: 8px">
+                                            <div class="image-service-dynamic">
                                                 <img
                                                         class="w-100 services-service-image"
                                                         src="/src/images/services/2-2560х1080_0018_Vector-Smart-Object.png"
@@ -555,14 +564,14 @@
                                                 >
                                             </div>
                                             <div class="d-flex text-white flex-column" style="min-width: 250px;">
-                                            <span class="d-block fs-5">
-                                                Ремонт двигателей<br>внутреннего сгорания
+                                            <span class="fs-4">
+                                                Ремонт двигателей<br><span style="white-space: nowrap">внутреннего сгорания</span>
                                             </span>
-                                                <p>ЯМЗ, КАМАЗ, ГАЗ, Cummins,<br> Weichai, Cat</p>
+                                                <p style="white-space: nowrap">ЯМЗ, КАМАЗ, ГАЗ, Cummins, Weichai, Cat</p>
                                             </div>
                                         </div>
                                         <div class="d-flex justify-content-center justify-content-md-start gap-3">
-                                            <div style="width: 50px; padding-top: 8px">
+                                            <div class="image-service-dynamic">
                                                 <img
                                                         class="w-100 services-service-image"
                                                         src="/src/images/services/2-2560х1080_0016_Vector-Smart-Object.png"
@@ -570,14 +579,15 @@
                                                 >
                                             </div>
                                             <div class="d-flex text-white flex-column" style="min-width: 250px;">
-                                                <span class="fs-5">
-                                                    Ремонт гидромеханической<br>передачи, КПП и редуктора
+                                                <span class="fs-4">
+                                                    Ремонт<br><span style="white-space: nowrap">гидромеханической передачи</span>,
+                                                    <span style="white-space: nowrap">КПП и редуктора</span>
                                                 </span>
                                                 <p>Белаз, Komatsu</p>
                                             </div>
                                         </div>
                                         <div class="d-flex justify-content-center justify-content-md-start gap-3">
-                                            <div style="width: 50px; padding-top: 8px">
+                                            <div class="image-service-dynamic">
                                                 <img
                                                         class="w-100 services-service-image"
                                                         src="/src/images/services/2-2560х1080_0027_Vector-Smart-Object.png"
@@ -585,13 +595,14 @@
                                                 >
                                             </div>
                                             <div class="d-flex text-white flex-column" style="min-width: 250px;">
-                                                 <span class="fs-5">
-                                                    Ремонт редукторов мотор-колес<br>(РМК), колесных дисков,<br> крупногабаритных шин (КГШ)
+                                                 <span class="fs-4">
+                                                    <span style="white-space: nowrap">Ремонт редукторов мотор-колес (РМК)</span>, колесных дисков,<br>
+                                                     <span style="white-space: nowrap">крупногабаритных шин (КГШ)</span>
                                                 </span>
                                             </div>
                                         </div>
                                         <div class="d-flex justify-content-center justify-content-md-start gap-3">
-                                            <div style="width: 50px; padding-top: 8px">
+                                            <div class="image-service-dynamic">
                                                 <img
                                                         class="w-100 services-service-image"
                                                         src="/src/images/services/2-2560х1080_0012_Vector-Smart-Object.png"
@@ -599,17 +610,16 @@
                                                 >
                                             </div>
                                             <div class="d-flex text-white flex-column" style="min-width: 250px;">
-                                               <span class="fs-5">
-                                                    Ремонт пневмо-гидроподвесок (ПГП),<br>
-                                                    цилиндров опрокидывающего<br>
-                                                    механизма (ЦОМ), цилиндров<br>
-                                                    поворота
+                                               <span class="fs-4">
+                                                    <span style="white-space: nowrap">Ремонт пневмо-гидроподвесок (ПГП),</span><br>
+                                                    <span style="white-space: nowrap">цилиндров опрокидывающего</span>
+                                                    <span style="white-space: nowrap">механизма (ЦОМ), цилиндров поворота</span>
                                                </span>
-                                                <p>БЕЛАЗ всех моделей и модификаций</p>
+                                                <p style="white-space: nowrap">БЕЛАЗ всех моделей и модификаций</p>
                                             </div>
                                         </div>
                                         <div class="d-flex justify-content-center justify-content-md-start gap-3">
-                                            <div style="width: 50px; padding-top: 8px">
+                                            <div class="image-service-dynamic">
                                                 <img
                                                         class="w-100 services-service-image"
                                                         src="/src/images/services/2-2560х1080_0011_Vector-Smart-Object.png"
@@ -617,7 +627,7 @@
                                                 >
                                             </div>
                                             <div class="d-flex text-white flex-column" style="min-width: 250px;">
-                                                <span class="fs-5">
+                                                <span class="fs-4">
                                                     Ремонт редуктора<br>
                                                     заднего моста (РЗМ)
                                                 </span>
@@ -625,7 +635,7 @@
                                             </div>
                                         </div>
                                         <div class="d-flex justify-content-center justify-content-md-start gap-3">
-                                            <div style="width: 50px; padding-top: 8px">
+                                            <div class="image-service-dynamic">
                                                 <img
                                                         class="w-100 services-service-image"
                                                         src="/src/images/services/2-2560х1080_0032_Vector-Smart-Object.png"
@@ -633,15 +643,14 @@
                                                 >
                                             </div>
                                             <div class="d-flex text-white flex-column" style="min-width: 250px;">
-                                              <span class="fs-5">
-                                                Капитальный ремонт<br>
-                                                и футеровка ковшей<br>
-                                                объемом от 3 до 20 м
+                                              <span class="fs-4">
+                                                  <span style="white-space: nowrap">Капитальный ремонт и футеровка</span>
+                                                  <span style="white-space: nowrap">ковшей объемом от 3 до 20 м<sup>3</sup></span>
                                               </span>
                                             </div>
                                         </div>
                                         <div class="d-flex justify-content-center justify-content-md-start gap-3">
-                                            <div style="width: 50px; padding-top: 8px">
+                                            <div class="image-service-dynamic">
                                                 <img
                                                         class="w-100 services-service-image"
                                                         src="/src/images/services/2-2560х1080_0033_Vector-Smart-Object.png"
@@ -649,9 +658,9 @@
                                                 >
                                             </div>
                                             <div class="d-flex text-white flex-column" style="min-width: 250px;">
-                                                <span class="fs-5">
-                                                   Изготовление рукавов<br>
-                                                   высокого давления (РВД)
+                                                <span class="fs-4">
+                                                   <span style="white-space: nowrap">Изготовление рукавов</span><br>
+                                                   <span style="white-space: nowrap">высокого давления (РВД)</span>
                                                 </span>
                                             </div>
                                         </div>
@@ -659,11 +668,11 @@
                                 </div>
                             </div>
 
-                            <div class="col-12 col-md-6">
+                            <div class="col-12 col-md-6 ps-lg-5">
                                 <div class="row">
-                                    <div class="col-lg-12">
+                                    <div class="col-lg-12 d-flex flex-column gap-3">
                                         <div class="d-flex justify-content-center justify-content-md-start gap-3">
-                                            <div style="width: 50px; padding-top: 8px">
+                                            <div class="image-service-dynamic">
                                                 <img
                                                         class="w-100 services-service-image"
                                                         src="/src/images/services/2-2560х1080_0025_Vector-Smart-Object.png"
@@ -671,15 +680,14 @@
                                                 >
                                             </div>
                                             <div class="d-flex text-white flex-column" style="min-width: 250px;">
-                                                <span class="d-block fs-5">
-                                                    Восстановление стрел<br>
-                                                    и рукоятей карьерных<br>
-                                                    экскаваторов
+                                                <span class="fs-4">
+                                                    <span style="white-space: nowrap">Ремонт стрел и рукоятей</span><br>
+                                                    <span style="white-space: nowrap">любых экскаваторов</span>
                                                 </span>
                                             </div>
                                         </div>
                                         <div class="d-flex justify-content-center justify-content-md-start gap-3">
-                                            <div style="width: 50px; padding-top: 8px">
+                                            <div class="image-service-dynamic">
                                                 <img
                                                         class="w-100 services-service-image"
                                                         src="/src/images/services/2-2560х1080_0034_Vector-Smart-Object.png"
@@ -687,13 +695,14 @@
                                                 >
                                             </div>
                                             <div class="d-flex text-white flex-column" style="min-width: 250px;">
-                                                 <span class="fs-5">
-                                                    Ремонт электронных<br>блоков управления
+                                                 <span class="fs-4">
+                                                     <span style="white-space: nowrap">Ремонт электронных</span>
+                                                     <span style="white-space: nowrap">блоков управления</span>
                                                 </span>
                                             </div>
                                         </div>
                                         <div class="d-flex justify-content-center justify-content-md-start gap-3">
-                                            <div style="width: 50px; padding-top: 8px">
+                                            <div class="image-service-dynamic">
                                                 <img
                                                         class="w-100 services-service-image"
                                                         src="/src/images/services/2-2560х1080_0035_Vector-Smart-Object.png"
@@ -701,13 +710,14 @@
                                                 >
                                             </div>
                                             <div class="d-flex text-white flex-column" style="min-width: 250px;">
-                                                 <span class="fs-5">
-                                                    Капитальный и текущий<br>ремонт рам и платформ<br>карьерных самосвалов
+                                                 <span class="fs-4">
+                                                     <span style="white-space: nowrap">Ремонт рам и платформ</span><br>
+                                                     <span style="white-space: nowrap">карьерных самосвалов</span>
                                                 </span>
                                             </div>
                                         </div>
                                         <div class="d-flex justify-content-center justify-content-md-start gap-3">
-                                            <div style="width: 50px; padding-top: 8px">
+                                            <div class="image-service-dynamic">
                                                 <img
                                                         class="w-100 services-service-image"
                                                         src="/src/images/services/2-2560х1080_0007_Vector-Smart-Object.png"
@@ -715,15 +725,15 @@
                                                 >
                                             </div>
                                             <div class="d-flex text-white flex-column" style="min-width: 250px;">
-                                                <span class="fs-5">
-                                                    Ремонт рабочего<br>
-                                                    оборудования тракторно-<br>
-                                                    бульдозерной техники (ТБУ)
+                                                <span class="fs-4">
+                                                    <span style="white-space: nowrap">Ремонт рабочего</span>
+                                                    <span style="white-space: nowrap">оборудования тракторно-</span>
+                                                    <span style="white-space: nowrap">бульдозерной техники (ТБУ)</span>
                                                 </span>
                                             </div>
                                         </div>
                                         <div class="d-flex justify-content-center justify-content-md-start gap-3">
-                                            <div style="width: 50px; padding-top: 8px">
+                                            <div class="image-service-dynamic">
                                                 <img
                                                         class="w-100 services-service-image"
                                                         src="/src/images/services/2-2560х1080_0036_Vector-Smart-Object.png"
@@ -731,7 +741,7 @@
                                                 >
                                             </div>
                                             <div class="d-flex text-white flex-column" style="min-width: 250px;">
-                                               <span class="fs-5">
+                                               <span class="fs-4">
                                                     Работа на станках<br>
                                                     с программным<br>
                                                     управлением (ЧПУ)
@@ -739,7 +749,7 @@
                                             </div>
                                         </div>
                                         <div class="d-flex justify-content-center justify-content-md-start gap-3">
-                                            <div style="width: 50px; padding-top: 8px">
+                                            <div class="image-service-dynamic">
                                                 <img
                                                         class="w-100 services-service-image"
                                                         src="/src/images/services/2-2560х1080_0005_Vector-Smart-Object.png"
@@ -747,13 +757,14 @@
                                                 >
                                             </div>
                                             <div class="d-flex text-white flex-column" style="min-width: 250px;">
-                                       <span class="fs-5">
-                                           Услуги лазерной<br>резки металла
-                                       </span>
+                                               <span class="fs-4">
+                                                   <span style="white-space: nowrap">Лазерная и плазменная</span>
+                                                   <span style="white-space: nowrap">обработка металла</span>
+                                               </span>
                                             </div>
                                         </div>
                                         <div class="d-flex justify-content-center justify-content-md-start gap-3">
-                                            <div style="width: 50px; padding-top: 8px">
+                                            <div class="image-service-dynamic">
                                                 <img
                                                         class="w-100 services-service-image"
                                                         src="/src/images/services/2-2560х1080_0037_Vector-Smart-Object.png"
@@ -761,15 +772,15 @@
                                                 >
                                             </div>
                                             <div class="d-flex text-white flex-column" style="min-width: 250px;">
-                                        <span class="fs-5">
-                                            Изготовление нестандартного<br>
-                                            оборудования
-                                        </span>
-                                                <p>ЯМЗ, КАМАЗ, ГАЗ, Cummins, Weichai, Cat</p>
+                                                <span class="fs-4">
+                                                    Изготовление
+                                                    <span style="white-space: nowrap">нестандартного оборудования</span>
+                                                </span>
+                                                <p style="white-space: nowrap">ЯМЗ, КАМАЗ, ГАЗ, Cummins, Weichai, Cat</p>
                                             </div>
                                         </div>
                                         <div class="d-flex justify-content-center justify-content-md-start gap-3">
-                                            <div style="width: 50px; padding-top: 8px">
+                                            <div class="image-service-dynamic">
                                                 <img
                                                         class="w-100 services-service-image"
                                                         src="/src/images/services/2-2560х1080_0038_Vector-Smart-Object.png"
@@ -777,11 +788,11 @@
                                                 >
                                             </div>
                                             <div class="d-flex text-white flex-column" style="min-width: 250px;">
-                                       <span class="fs-5">
-                                          Изготовление<br>
-                                          металлоизделий
-                                       </span>
-                                                <p>3D забора с элементами (калитки, ворота), профлиста</p>
+                                               <span class="fs-4">
+                                                  Изготовление<br>
+                                                  <span style="white-space: nowrap">3D заборов, профлиста</span>
+                                               </span>
+                                                <p>3D заборов, профлиста</p>
                                             </div>
                                         </div>
                                     </div>
@@ -806,11 +817,11 @@
         class="position-relative"
 >
     <div class="backdrop position-absolute w-100 h-100"></div>
-    <div class="position-relative z-3 container py-3 vh-100">
+    <div class="position-relative z-3 container py-4 vh-100">
         <div class="row h-100">
             <div class="col-lg-12 h-100">
                 <div class="d-flex flex-column h-100">
-                    <div class="d-flex justify-content-start justify-content-md-end mb-4">
+                    <div class="d-flex justify-content-start justify-content-md-end mb-4 me-5">
                         <span class="d-block h1 text-primary section-title">
                             Выездной сервис
                         </span>
@@ -819,13 +830,16 @@
                     <div class="row h-100">
                         <div class="d-none d-md-block col"></div>
                         <div class="col-12 col-lg-6 h-100 d-flex align-items-center justify-content-start justify-content-lg-end">
-                            <ul class="position-absolute away-list list-unstyled d-flex flex-column gap-4 fs-5">
+                            <ul class="position-absolute away-list list-unstyled d-flex flex-column gap-4 fs-4">
                                 <li class="d-flex">
                                     <div class="mx-2">
                                         <span class="dot"></span>
                                     </div>
                                     <div style="width: 15rem;">
-                                        Мобильные сервисные<br> бригады плановое ТО,<br> диагностика, текущий ремонт
+                                        <span style="white-space: nowrap">Мобильные сервисные бригады</span>
+                                        <span style="white-space: nowrap">плановое ТО, диагностика,</span>
+                                        <span style="white-space: nowrap">текущий ремонт, сварочный работы,</span>
+                                        <span style="white-space: nowrap">выездные сварочные бригады</span>
                                     </div>
                                 </li>
 
@@ -834,7 +848,8 @@
                                         <span class="dot"></span>
                                     </div>
                                     <div style="width: 15rem;">
-                                        Установка систем<br>пожаротушения<br> и централизованных<br> систем смазки
+                                        <span style="white-space: nowrap">Установка систем пожаротушения</span>
+                                        <span style="white-space: nowrap">и централизованных систем смазки</span>
                                     </div>
                                 </li>
 
@@ -843,7 +858,7 @@
                                         <span class="dot"></span>
                                     </div>
                                     <div style="width: 15rem;">
-                                        Расточно-наплавочные<br> работы
+                                        <span style="white-space: nowrap">Расточно-наплавочные работы</span>
                                     </div>
                                 </li>
 
@@ -852,16 +867,8 @@
                                         <span class="dot"></span>
                                     </div>
                                     <div style="width: 15rem;">
-                                        Лаборатория<br> неразрушающего<br> контроля
-                                    </div>
-                                </li>
-
-                                <li class="d-flex">
-                                    <div class="mx-2">
-                                        <span class="dot"></span>
-                                    </div>
-                                    <div style="width: 15rem;">
-                                        Выездные<br> сварочные бригады
+                                        <span style="white-space: nowrap">Лаборатория</span>
+                                        <span style="white-space: nowrap">неразрушающего контроля</span>
                                     </div>
                                 </li>
                             </ul>
@@ -879,7 +886,7 @@
         <div class="modal-content rounded-0 bg-primary">
             <div class="modal-body">
                 <div class="d-flex justify-content-between mb-2">
-                    <h5 class="modal-title text-white fw-bold" id="exampleModalLabel">
+                    <h5 class="modal-title text-white fw-bold fs-3 lh-1 mb-3" id="exampleModalLabel">
                         Оставьте заявку<br> на обратный звонок
                     </h5>
 
@@ -890,22 +897,22 @@
                     </div>
                 </div>
 
-                <form name="order" class="d-flex flex-column gap-2">
+                <form name="order" class="d-flex flex-column gap-4">
                     <label class="w-100">
-                        <input name="name" type="text" class="form-control" placeholder="Имя">
+                        <input name="name" type="text" class="form-control fs-4" placeholder="Имя">
                     </label>
 
                     <label class="w-100">
-                        <input name="phone" type="tel" class="form-control" placeholder="Контактный телефон">
+                        <input name="phone" type="tel" class="form-control fs-4" placeholder="Контактный телефон">
                     </label>
 
                     <label class="w-100">
-                        <textarea name="description" class="form-control"
+                        <textarea name="description" class="form-control fs-4"
                                   placeholder="Заинтересовавшая вас тема"></textarea>
                     </label>
 
-                    <div class="actions d-flex">
-                        <button class="btn btn-primary">
+                    <div class="actions d-flex w-100">
+                        <button class="btn btn-primary border-3 fw-bold w-100">
                             Отправить
                         </button>
                     </div>
@@ -916,7 +923,7 @@
 </div>
 
 <!-- Товары в наличии -->
-<section id="goods" class="bg-primary py-2" style="min-height: 100vh">
+<section id="goods" class="bg-primary py-4" style="min-height: 100vh">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -925,49 +932,61 @@
                     Товары в наличии
                    </span>
 
-                    <div class="row">
-                        <div class="col-12 col-md-6 position-relative" style="height: 45vh">
-                            <div
-                                    class="position-absolute h-100 w-100 z-1"
-                                    style="background-image: url('./src/images/goods/Group 1.png'); background-size: cover;">
+                    <div class="row pe-lg-5">
+                        <div class="col-12 col-md-6 position-relative hover-mouse-scale mb-5">
+                            <div class="bordered position-relative">
+                                <img class="w-100 rounded-4" src="./src/images/goods/Group%201.png" alt="">
+                                <span class="d-block ps-5 pt-5 position-absolute top-0 z-3 fw-bold fs-3 text-white" style="line-height: 2.3rem">
+                                    Редукторы мотор-колеса
+                                    БЕЛАЗ-75132 и 75306
+                                    восстановленные
+                                </span>
                             </div>
-
-                            <span class="d-block ps-3 pt-3 position-relative z-3 fw-bold fs-4 text-white lh-1">
-                                Редукторы мотор-колеса<br>
-                                БЕЛАЗ-75132 и 75306<br>
-                                восстановленные
-                            </span>
                         </div>
-                        <div class="col-12 col-md-6 position-relative" style="height: 45vh">
-                            <div
-                                    class="position-absolute h-100 w-100 z-1"
-                                    style="background-image: url('./src/images/goods/railway.png'); background-size: cover;">
+                        <div class="col-12 col-md-6 position-relative hover-mouse-scale mb-5">
+                            <div class="bordered position-relative">
+                                <img class="w-100 rounded-4" src="./src/images/goods/railway.png" alt="">
+                                    <span class="d-block ps-5 pt-5 position-absolute top-0 z-3 fw-bold fs-3 text-white" style="line-height: 1rem">
+                                    Бытовые<br></br>вагончики
+                                </span>
                             </div>
-
-                            <span class="d-block ps-3 pt-3 position-relative z-3 fw-bold fs-4 text-white lh-1">
-                                Бытовые<br> вагончики
-                            </span>
                         </div>
-                        <div class="col-12 col-md-6 position-relative" style="height: 45vh">
-                            <div
-                                    class="position-absolute h-100 w-100 z-1"
-                                    style="background-image: url('./src/images/goods/fence.png'); background-size: cover;">
+                        <div class="col-12 col-md-6 position-relative hover-mouse-scale mb-5">
+                            <div class="bordered position-relative">
+                                <img class="w-100" src="./src/images/goods/fence.png" alt="">
+                                <span class="d-block ps-5 pt-5 position-absolute top-0 z-3 fw-bold fs-3 text-white" style="line-height: 2.3rem">
+                                    3D забор
+                                </span>
                             </div>
-
-                            <span class="d-block ps-3 pt-3 position-relative z-3 fw-bold fs-4 text-white lh-1">
-                                3D забор
-                            </span>
                         </div>
-                        <div class="col-12 col-md-6 position-relative" style="height: 45vh">
-                            <div
-                                    class="position-absolute h-100 w-100 z-1"
-                                    style="background-image: url('./src/images/goods/metall.png'); background-size: cover;">
+                        <div class="col-12 col-md-6 position-relative hover-mouse-scale mb-5">
+                            <div class="bordered position-relative">
+                                <img class="w-100 rounded-4" src="./src/images/goods/metall.png" alt="">
+                                <span class="d-block ps-5 pt-5 position-absolute top-0 z-3 fw-bold fs-3 text-white" style="line-height: 2.3rem">
+                                    Профлист
+                                </span>
                             </div>
-
-                            <span class="d-block ps-3 pt-3 position-relative z-3 fw-bold fs-4 text-white lh-1">
-                                Профлист
-                            </span>
                         </div>
+<!--                        <div class="col-12 col-md-6 position-relative" style="height: 45vh">-->
+<!--                            <div-->
+<!--                                    class="position-absolute h-100 w-100 z-1"-->
+<!--                                    style="background-image: url('./src/images/goods/fence.png'); background-size: cover;">-->
+<!--                            </div>-->
+
+<!--                            <span class="d-block pt-5 position-relative z-3 fw-bold fs-3 text-white" style="line-height: 2.3rem">-->
+<!--                                3D забор-->
+<!--                            </span>-->
+<!--                        </div>-->
+<!--                        <div class="col-12 col-md-6 position-relative" style="height: 45vh">-->
+<!--                            <div-->
+<!--                                    class="position-absolute h-100 w-100 z-1"-->
+<!--                                    style="background-image: url('./src/images/goods/metall.png'); background-size: cover;">-->
+<!--                            </div>-->
+
+<!--                            <span class="d-block ps-5 pt-5 position-relative z-3 fw-bold fs-3 text-white" style="line-height: 2.3rem">-->
+<!--                                Профлист-->
+<!--                            </span>-->
+<!--                        </div>-->
                     </div>
                 </div>
             </div>
@@ -980,19 +999,19 @@
     <div class="container">
         <div class="row">
             <div class="col-8 col-md-6">
-               <span class="d-block section-title text-uppercase text-white mb-3">
+               <span class="d-block section-title text-uppercase text-white" style="margin-bottom: 8.5rem;">
                     Контакты
                 </span>
-                <form class="mb-4">
+                   <form class="mb-4 d-flex flex-column gap-2">
                     <div class="form-group">
                         <label class="w-100">
-                            <input autocomplete="off" name="name" type="text" class="form-control" placeholder="Имя">
+                            <input autocomplete="off" name="name" type="text" class="form-control fs-4" placeholder="Имя">
                         </label>
                     </div>
 
                     <div class="form-group">
                         <label class="w-100">
-                            <input autocomplete="off" name="phone" type="tel" class="form-control"
+                            <input autocomplete="off" name="phone" type="tel" class="form-control fs-4"
                                    placeholder="Контактный номер">
                         </label>
                     </div>
@@ -1000,8 +1019,9 @@
                     <div class="form-group">
                         <label class="w-100">
                             <textarea
+                                    style="height: 200px !important;"
                                     name="description"
-                                    class="form-control"
+                                    class="form-control fs-4"
                                     placeholder="Заинтересовавшая вас тема"
                             ></textarea>
                         </label>
@@ -1017,7 +1037,7 @@
                         Приемная
                     </span>
 
-                    <a class="text-decoration-none text-white fw-bold fs-5" href="">
+                    <a class="text-decoration-none text-white fw-bold fs-3" href="">
                         +7&nbsp;(384-52)&nbsp;6-06-07
                     </a>
                 </div>
@@ -1027,10 +1047,10 @@
                         Коммерческий отдел
                     </span>
 
-                    <a class="text-decoration-none text-white fw-bold fs-4" href="">
+                    <a class="text-decoration-none text-white fw-bold fs-3" href="">
                         +7&nbsp;(384-52)&nbsp;6-06-07
                     </a>
-                    <a class="text-decoration-none text-white fw-bold fs-4" href="tel:+79134100845">
+                    <a class="text-decoration-none text-white fw-bold fs-3" href="tel:+79134100845">
                         +7&nbsp;913-410-08-45
                     </a>
                 </div>

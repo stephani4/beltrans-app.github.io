@@ -26,7 +26,8 @@ html {
 }
 
 .section-title {
-  font-size: calc(2.0rem + 0.5vh)
+  white-space: nowrap;
+  font-size: 60px
 }
 
 .form-group {
@@ -40,7 +41,7 @@ html {
   border-radius: 50%;
   background: #ff8100;
   display: inline-block;
-  margin-top: 8px;
+  margin-top: 0.3rem;
 }
 
 .order-description {
@@ -90,7 +91,7 @@ section#services .d-flex.justify-content-center p {
 }
 
 section#services .d-flex.flex-column {
-  width: 350px;
+  width: 370px;
 }
 
 section#service ul li div:last-child {
@@ -99,6 +100,34 @@ section#service ul li div:last-child {
 
 .main-menu .main-menu-body {
   width: 500px;
+}
+
+ul.away-list {
+  margin-right: 14rem;
+}
+
+ul.away-list li div:nth-child(2) {
+  line-height: 1.9rem !important;
+  padding-top: 0.5rem;
+}
+
+.bordered {
+  border: 10px solid #2e8bd1;
+  border-radius: 25px;
+}
+
+.image-service-dynamic {
+  width: 130px !important;
+  padding-top: 8px !important;
+}
+
+/* Animation */
+.hover-mouse-scale {
+  transition: transform 0.3s ease;
+}
+
+.hover-mouse-scale:hover {
+  transform: scale(1.1);
 }
 
 @media screen and (min-width: 1400px) {
@@ -116,10 +145,6 @@ section#service ul li div:last-child {
 }
 
 @media screen and (max-width: 1200px) {
-  section#services .d-flex.flex-column {
-    width: 250px;
-  }
-
   p {
     font-size: 0.85rem;
   }
@@ -129,7 +154,17 @@ section#service ul li div:last-child {
     max-width: 966px;
     bottom: 0;
   }
+
+  .image-service-dynamic {
+    width: 90px !important;
+  }
+
+  #services .fs-4 {
+    font-size: calc(1rem + 0.3vw) !important;
+  }
 }
+
+
 
 @media screen and (max-width: 992px) {
   section#main nav .navbar-brand img {
@@ -140,8 +175,9 @@ section#service ul li div:last-child {
     right: 2rem;
   }
 
-  #service .section-title {
+  .section-title {
     color: white !important;
+    font-size: calc(2.0rem + 0.5vh) !important;
   }
 
   #service .backdrop {
@@ -150,6 +186,7 @@ section#service ul li div:last-child {
 
   ul.away-list {
     color: white;
+    margin-right: auto;
   }
 
   ul.away-list li {
@@ -161,6 +198,14 @@ section#service ul li div:last-child {
     max-width: 690px;
     bottom: 0;
   }
+}
+
+.manufacturing-services .fs-4 {
+  line-height: 2rem !important;
+}
+
+.manufacturing-services p {
+  margin-top: 0.3rem;
 }
 
 @media screen and (max-width: 768px) {
