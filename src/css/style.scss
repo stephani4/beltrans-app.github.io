@@ -16,6 +16,10 @@ html {
   background-clip: text;
 }
 
+.text-orange {
+  color: var(--color-orange);
+}
+
 .carousel-item {
   background-size: cover;
   height: 100vh;
@@ -46,8 +50,7 @@ html {
 
 .order-description {
   border-bottom: 1px dotted;
-  right: 0;
-  top: calc(-730px / 2 + 30px)
+  margin-right: 130px;
 }
 
 .btn-menu-list {
@@ -121,6 +124,13 @@ ul.away-list li div:nth-child(2) {
   padding-top: 8px !important;
 }
 
+.bg-shadow {
+  box-shadow: 1px 0 45px 26px rgba(0, 0, 0, 0.40);
+  background: rgba(0, 0, 0, 0.35);
+  padding: 10px 10px;
+  border-radius: 20px;
+}
+
 /* Animation */
 .hover-mouse-scale {
   transition: transform 0.3s ease;
@@ -149,6 +159,10 @@ ul.away-list li div:nth-child(2) {
     font-size: 0.85rem;
   }
 
+  .order-description {
+    margin-right: 70px !important;
+  }
+
   img.main-technic-image {
     right: 11.2rem;
     max-width: 966px;
@@ -164,11 +178,29 @@ ul.away-list li div:nth-child(2) {
   }
 }
 
+@media screen and (max-width: 440px) {
+  #services .fs-4 {
+    font-size: 0.9rem !important;
+    line-height: 1rem !important;
+  }
 
+  #services p {
+    font-size: 0.6rem !important;
+  }
+
+  #service .service-list {
+    font-size: 0.9rem !important;
+    padding-top: 0;
+  }
+}
 
 @media screen and (max-width: 992px) {
   section#main nav .navbar-brand img {
     width: 14rem !important;
+  }
+
+  .order-description {
+    margin-right: 0 !important;
   }
 
   .btn-menu-list {
@@ -267,4 +299,18 @@ ul.away-list li div:nth-child(2) {
     width: 20rem;
     left: -1.0rem;
   }
+}
+
+.good-box {
+  height: 450px;
+}
+
+.good-box .bordered {
+  height: 100%;
+  display: flex;
+  background: linear-gradient(0deg, rgb(0, 110, 181) 21%, rgb(1, 73, 154) 72%);
+}
+
+.good-box img {
+  margin-top: auto;
 }

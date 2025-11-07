@@ -3,8 +3,9 @@ import $ from "jquery/dist/jquery.js";
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import './css/style.scss';
-import 'bootstrap/dist/js/bootstrap.js';
+import * as bootstrap from 'bootstrap/dist/js/bootstrap.js';
 
+window.bootstrap = bootstrap;
 window.qs = window.Qs = qs;
 window.$ = window.Jquery = window.jquery = $;
 
@@ -59,14 +60,36 @@ const orderService = new OrderService();
         }, 500);
     }
 
-    async function sendRequestOrder(event) {
-        event.preventDefault();
+    const resultModal = new bootstrap.Modal('#resultSendModal');
+    async function sendRequestOrder() {
         const formData = qs.parse($(this).serialize());
+
+        $(this).find('input, textarea').each(function () {
+            $(this).val('');
+        });
+
         const response = await orderService.send(formData);
-        console.log(response)
     }
 
-    ['order'].forEach(form => $(document.forms[form]).submit(sendRequestOrder))
+    const orderModal = new bootstrap.Modal('#orderModal');
+    $(document.forms['order']).submit(function (event) {
+        event.preventDefault();
+
+        orderModal.hide();
+        resultModal.show();
+        sendRequestOrder
+            .call(this, {})
+            .then(r => ({}));
+    });
+
+    $(document.forms['footer-order']).submit(function (event) {
+        event.preventDefault();
+
+        resultModal.show();
+        sendRequestOrder
+            .call(this, {})
+            .then(r => ({}));
+    });
 
     global.scrollToElement = scrollToElement;
 })(window);

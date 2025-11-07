@@ -6,6 +6,6 @@ export default class OrderService extends Base {
     }
 
     send(data) {
-        return this.client.post('/order/save', data);
+        return this.client.post('/api/orders/save', data);
     }
 }
